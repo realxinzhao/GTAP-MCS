@@ -1,0 +1,141 @@
+! This Command file
+! was written by RunGTAP (Version 3.61 built 19/Oct/2013)
+! This is the default CMFSTART file which RunGTAP uses when
+! a version has no CMFSTART file of its own
+! testing MCET here by 
+!       1. changing qo(ENDW_COMM,REG) to qo(NAEZ_COMM,REG) in exo. var.
+!       2. adding lcoveraez and areaadjust in exo. var.
+!       3. deleting equation E_AREAADJUST in .tab and .sti
+iz1 = no ;
+NDS = yes; ! no displays
+Extrapolation accuracy file = NO ;
+CPU = yes;
+! cumulatively-retained endogenous (REG) (TRAD_COMM) piw %macro ;
+
+!@ end of CMFSTART part
+aux files = GTAP;
+file gtapSETS = sets.har;
+file gtapDATA = basedata7.har;
+Updated file gtapDATA = ../outDB/default.upd;
+Solution file = default;
+file gtapPARM = default3.prm;
+file gtapPARL = ../parameter/par_default.prm;
+Verbal Description =
+Shock US  1.06 ATJ corn;
+!Method = Johansen;
+Method = Gragg;
+Steps = 2 4 6;
+automatic accuracy = yes;
+accuracy figures = 4;
+accuracy percent = 80;
+minimum subinterval length =  1.0E-0003;
+minimum subinterval fails = stop;
+accuracy criterion = Data;
+subintervals = 2;
+exogenous
+    ahenergy
+    afenergy
+    afall
+    afcom
+    afreg
+    afsec
+    ams
+    aoall
+    aoreg
+    aosec
+  ! atall               omitted
+    atd
+    atf
+    atm
+    ats
+    au
+    biodsslack
+    biodpslack
+    biodrslack
+    biodoslack
+
+    !new slacks
+    biodmslack
+    biojgslack
+    biojrslack
+    biojpslack
+    biojrslack1
+    biojpslack1
+    biojsslack
+
+    cgdslack
+    consslack
+    dpgov
+    dppriv
+    dpsave
+    endwslack
+    ethslack
+    ethsslack
+    incomeslack
+!    pemp
+    pfactwld
+    pop
+    profitslack
+    psaveslack
+!    qo(ENDW_COMM,REG)
+    qo(NAEZ_COMM,REG)
+!    RCTAXB
+    tf
+    tfd0              !   omitted
+    tfm0              !   omitted
+    tgd
+    tgm
+    tm
+    tms
+    to
+    tpd
+    tpm
+    tp
+    tradslack
+    tx
+    txs
+! add goes nonland
+! goes (AEZ_COMM,NLAND_INDS.REG)
+    qf(AEZ_COMM, NLAND_INDS, REG)
+    p_LANDCOVER_L(AEZ_COMM, UNMNGLAND,REG)
+    p_HARVSTAREA_L(AEZ_COMM,CRP_LAND,REG)
+    tpbio
+    towbio
+    tfbio
+    lcoveraez
+    areaadjust
+    ;
+Rest Endogenous ;
+
+!Swap to fix ethanol export from CANADA to US
+swap txs("Ethanol1","CAN","USA") = qxs("Ethanol1","CAN","USA");
+
+!Swap: to fix the CRP rents when USDA defends the CRP
+swap tf(AEZ_COMM,"Oth_Ind_Se","USA")=qoes(AEZ_COMM,"Oth_Ind_Se","USA");
+
+! Make the RFS revenue neutral using tax on fuel
+swap del_taxriubio("USA") = tfbio("USA");
+
+!To fix ethanol
+swap qo("Ethanol1","USA") = tfd0("Ethanol1", "Blender" , "USA");
+swap qo("ethanol3","USA") = tfd0("ethanol3", "Blender", "USA");
+
+
+!To fix biod
+swap qo("biod_Soy","USA") = tfd0("biod_Soy","Blender", "USA");
+swap qo("biod_Palm","USA") = tfd0("biod_Palm", "Blender", "USA");
+swap qo("biod_Rape","USA") = tfd0("biod_Rape", "Blender", "USA");
+swap qo("biod_Oth","USA") = tfd0("biod_Oth", "Blender", "USA");
+
+
+!Swap to fix ethanol1 export from USA
+swap txs("Ethanol1","USA",REG) = qxs("Ethanol1","USA",REG);
+swap txs("Ethanol2","Brazil","USA") = qxs("Ethanol2","Brazil","USA");
+
+!swap qo("BioJ_Soy_J","USA") = tfd0("BioJ_Soy_J", "Blender", "USA");
+!swap qo("BioJ_Soy_N","USA") = tfd0("BioJ_Soy_N", "Blender", "USA");
+!shock qo("bioj_soy_j","usa") = 1009183.9260561;
+!shock qo("bioj_soy_n","usa") = 1009183.9260561;
+
+swap qo("GRNATJ_J","USA") = tfd0("GRNATJ_J", "Blender", "USA");
+shock qo("GRNATJ_J","USA") = 287114.2623;
