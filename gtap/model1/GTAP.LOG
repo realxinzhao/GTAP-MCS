@@ -1,0 +1,4561 @@
+  
+ <TABLO  Version 6.5   January 2016>
+   This program accesses some of the routines in the GEMPACK software release
+ <GEMPACK Release 11.4.003   January 2016>
+  
+ Licence file: C:\GP\licen.gem
+  
+     -------------------------------------------------------
+    !            GEMPACK Software System Licence            !
+    !  Source Code Licence for the GEMPACK Software System  !
+    !                 Licence No.  GFM-0048                 !
+    !          Licence for Release 11.4 of GEMPACK          !
+    !           Center for Global Trade Analysis            !
+    !         Department of Agricultural Economics          !
+    !                   Krannert Building                   !
+    !                   Purdue University                   !
+    !                    West Lafayette,                    !
+    !                   Indiana IN 47907                    !
+    !                          USA                          !
+     -------------------------------------------------------
+  
+  
+     << COPYRIGHT 1987-2016: CoPS/Impact and KPSOFT >>
+  
+  Current directory is:
+ C:\Users\XZhaoPC\Desktop\2021Followuppaper\GTAP-MCS\gtap\model1
+  
+  
+  Full path name of running EXE is: C:\GP\tablo.exe
+  Fortran compiler = GF64  4.8.1 (rev3, built by mingw-builds project):
+  OPENMP number of threads: 8
+  Operating system is Windows 8
+  
+  
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  
+  
+                    TABLO OPTIONS
+               ( --> indicates those in effect )
+  
+       BAT Run in batch              STI Take inputs from a Stored-input file
+       BPR Brief prompts             SIF Store inputs on a file
+       LOG Output to log file        ASI Add to incomplete Stored-input file
+  
+       First stage                   Last Stage
+   --> F1 CHECK                      L1 CHECK
+       F2 CONDENSATION               L2 CONDENSATION
+       F3 CODE GENERATION        --> L3 CODE GENERATION
+  
+       RMS Require maximum set sizes to be specified
+       NTX Dont store TAB file on Auxiliary file
+       ICT Ignore Condensation statements on TAB file
+       ASB All Substitutions treated as Backsolves
+       NWT Add Newton-correction terms to levels equations
+       ACD Always use Change Differentiation of levels equations
+       SCO Specialized Check Options menu
+  
+   Select an option   :  <opt>      Deselect an option      : -<opt>
+   Help for an option : ?<opt>      Help on all options     : ??
+   Redisplay options  : /           Finish option selection : Carriage return
+ Your selection >
+  
+  
+ klg
+ Keeping temporary log file
+ Your selection >
+  
+  
+ rpt
+  
+  FILE TO WRITE REPORTS TO
+  
+  Input the full name (INCLUDING suffix) of this file.
+  
+  
+ C:\Users\XZhaoPC\Desktop\2021Followuppaper\GTAP-MCS\gtap\model1\TABmate.rpt
+ (Opened new text file
+  
+  'C:\Users\XZhaoPC\Desktop\2021Followuppaper\GTAP-MCS\gtap\model1\TABmate.rpt'.
+ )
+ Licence file: C:\GP\licen.gem
+  
+ Writing a report file
+ Your selection >
+  
+  
+ bat
+ Running in batch
+ Your selection >
+  
+  
+ sti
+  
+  STORED-INPUT FILE TO USE
+  
+  Input the full name (INCLUDING suffix) of this file.
+  
+  
+ C:\Users\XZhaoPC\Desktop\2021Followuppaper\GTAP-MCS\gtap\model1\GTAP.STI
+ (Opened, as text, existing file
+   'C:\Users\XZhaoPC\Desktop\2021Followuppaper\GTAP-MCS\gtap\model1\GTAP.STI'.)
+ Taking inputs from a Stored-input file
+ Your selection >
+  
+  
+ !   gtap.sti
+  
+  
+ !   ========
+  
+  
+ !
+  
+  
+ !   TABLO sti file for GTAP 6.1
+  
+  
+ !
+  
+  
+ bat         ! Run in batch.
+ Running in batch
+ Your selection >
+  
+  
+  
+  
+ Name of TABLO input file :
+ ------------------------
+   (Suffix '.tab' will be automatically appended.)
+  
+  
+ gtap        ! name of TABLO input file
+ (Opened, as text, existing file 'gtap.tab'.)
+  
+ Name of Information file :
+ ------------------------
+  
+  Input the full name (excluding suffix) of this file.
+   (The suffix '.inf' will be appended automatically to your input.)
+    Enter a CARRIAGE-RETURN to use the name    'gtap'.
+  
+  
+ gtap        ! name of information file
+ (Opened new print file 'gtap.inf'.)
+  
+ Note that this implementation will be known by the name 'gtap'.
+ Licence file: C:\GP\licen.gem
+  
+  
+ --> Starting CHECK stage
+  (Beginning preliminary pass of your TABLO Input file.)
+  
+  NUMIG = 6500, NUMZD = 62.
+  NUMST = 103, NUMSS = 150.
+  NUMFL = 4, NUMDS = 0.
+  NUMRD = 1425, NUMWR = 0.
+  NUMCS = 1319, NUMVC = 616.
+  TCSIND = 5210, TVCIND = 5111.
+  NUMEQ = 333, NUMFM = 1330.
+  NUMUD = 1158, NUMTR = 0.
+  NUMOMT = 0, NUMBST = 0.
+  NUMCP = 0, NUMMF = 0.
+  (Beginning the check of your TABLO Input file.)
+  (After 50 statements, total number of errors is 0.)
+  (After 150 statements, total number of errors is 0.)
+  (After 200 statements, total number of errors is 0.)
+  (After 250 statements, total number of errors is 0.)
+  (After 300 statements, total number of errors is 0.)
+  (After 350 statements, total number of errors is 0.)
+  (After 400 statements, total number of errors is 0.)
+  (After 450 statements, total number of errors is 0.)
+  (After 500 statements, total number of errors is 0.)
+  (After 600 statements, total number of errors is 0.)
+  (After 700 statements, total number of errors is 0.)
+  (After 750 statements, total number of errors is 0.)
+  (After 800 statements, total number of errors is 0.)
+  (After 900 statements, total number of errors is 0.)
+  (After 950 statements, total number of errors is 0.)
+  (After 1000 statements, total number of errors is 0.)
+  (After 1050 statements, total number of errors is 0.)
+  (After 1100 statements, total number of errors is 0.)
+  (After 1150 statements, total number of errors is 0.)
+  (After 1200 statements, total number of errors is 0.)
+  (After 1250 statements, total number of errors is 0.)
+ Declaration of 'FOREST_INDS' as a SUBSET of 'LCOVER_INDS'.
+ %% Information only.
+     This subset relation is a consequence of earlier subset declarations.
+  (After 1300 statements, total number of errors is 0.)
+  (After 1350 statements, total number of errors is 0.)
+  (After 1400 statements, total number of errors is 0.)
+  (After 1500 statements, total number of errors is 0.)
+  (After 1550 statements, total number of errors is 0.)
+  (After 1600 statements, total number of errors is 0.)
+  (After 1650 statements, total number of errors is 0.)
+  (After 1700 statements, total number of errors is 0.)
+  (After 1750 statements, total number of errors is 0.)
+ Declaration of 'CROP_INDS' as a SUBSET of 'NSAV_COMM'.
+ %% Information only.
+     This subset relation is a consequence of earlier subset declarations.
+  (After 1800 statements, total number of errors is 0.)
+  
+  (After 1832 statements, total number of errors is 0.)
+  
+  NUMIG = 1842, NUMZD = 62.
+  NUMST = 144, NUMSS = 171.
+  NUMFL = 4, NUMDS = 0.
+  NUMRD = 121, NUMWR = 0.
+  NUMCS = 324, NUMVC = 283.
+  TCSIND = 5210, TVCIND = 5111.
+  NUMEQ = 332, NUMFM = 335.
+  NUMUD = 66, NUMTR = 0.
+  NUMOMT = 0, NUMBST = 0.
+  NUMCP = 0, NUMMF = 0.
+  (Checking for duplicate name use.)
+  (Checking coefficient initialization.)
+  
+  
+ MESSAGE(S) ABOUT COEFFICIENT INITIALIZATION
+ -------------------------------------------
+  
+  FORMULA for 'PMSHR' starting at line 1703.
+  %%WARNING.    Only some values have been assigned to
+     coefficient 'VPA' which occurs in this formula.
+  
+  FORMULA for 'VPA' starting at line 1756.
+  %%WARNING.    Only some values have been assigned to
+     coefficient 'VPAS' which occurs in this formula.
+  
+  FORMULA for 'CSHHBIOIL' starting at line 1767.
+  %%WARNING.    Only some values have been assigned to
+     coefficient 'VPAS' which occurs in this formula.
+  
+  FORMULA for 'CSHHBIOIL' starting at line 1769.
+  %%WARNING.    Only some values have been assigned to
+     coefficient 'VPAS' which occurs in this formula.
+  
+  FORMULA for 'VFAS' starting at line 2505.
+  %%WARNING.    Only some values have been assigned to
+     coefficient 'VFA' which occurs in this formula.
+  
+  FORMULA for 'VFA' starting at line 2507.
+  %%WARNING.    Only some values have been assigned to
+     coefficient 'VFAS' which occurs in this formula.
+  
+  FORMULA for 'CSHCDDGC' starting at line 2513.
+  %%WARNING.    Only some values have been assigned to
+     coefficient 'VFAS' which occurs in this formula.
+  
+  
+ MESSAGE(S) ABOUT APPARENTLY REDUNDANT STATEMENTS
+ ------------------------------------------------
+  
+  FORMULA for 'SIZE_VOL' starting at line 3364.
+  
+  %%WARNING.    This formula appears to be redundant because
+     the coefficient 'SIZE_VOL' affected by it occurs in no equation
+     update or 'ORIG_LEVEL=' qualifier, nor on the right hand side of any
+     subsequent formula, nor in any subsequent DISPLAY,
+     ZERODIVIDE, WRITE or SET statement.
+  
+  FORMULA for 'YIELDREG' starting at line 7460.
+  
+  %%WARNING.    This formula appears to be redundant because
+     the coefficient 'YIELDREG' affected by it occurs in no equation
+     update or 'ORIG_LEVEL=' qualifier, nor on the right hand side of any
+     subsequent formula, nor in any subsequent DISPLAY,
+     ZERODIVIDE, WRITE or SET statement.
+  
+ COEFFICIENT INITIALIZATION SUMMARY
+ ----------------------------------
+  
+  %% NOTE the 9 WARNING(s) above about coefficients.
+  
+  %%INFORMATION. TABLO has created 41 new sets as follows:
+   S@hbiooil # Set with one element hbiooil, a subset of HHLD_COMM #
+   S@electricit # Set with one element electricity0, a subset of HHLD_COMM #
+   S@henergy # Set with one element henergy, a subset of HHLD_COMM #
+   S@hvol # Set with one element hvol, a subset of HHLD_COMM #
+   S@Miscanthus # Set with one element Miscanthus, a subset of ALL_INDS #
+   S@Switchgras # Set with one element Switchgrass, a subset of ALL_INDS #
+   S@CDDGC # Set with one element CDDGC, a subset of FIRM_COMM #
+   S@CDDGS # Set with one element CDDGS, a subset of FIRM_COMM #
+   S@CDDG # Set with one element CDDG, a subset of FIRM_COMM #
+   S@OBDBS # Set with one element OBDBS, a subset of FIRM_COMM #
+   S@OBDBP # Set with one element OBDBP, a subset of FIRM_COMM #
+   S@OBDBR # Set with one element OBDBR, a subset of FIRM_COMM #
+   S@OBDBO # Set with one element OBDBO, a subset of FIRM_COMM #
+   S@OBDB # Set with one element OBDB, a subset of FIRM_COMM #
+   S@OBCD # Set with one element OBCD, a subset of FIRM_COMM #
+   S@lvfeed # Set with one element lvfeed, a subset of FIRM_COMM #
+   S@crfeed # Set with one element crfeed, a subset of FIRM_COMM #
+   S@feed # Set with one element feed, a subset of FIRM_COMM #
+   S@biooil # Set with one element biooil, a subset of FIRM_COMM #
+   S@ncoal # Set with one element ncoal, a subset of FIRM_COMM #
+   S@nely # Set with one element nely, a subset of FIRM_COMM #
+   S@eny # Set with one element eny, a subset of FIRM_COMM #
+   S@ken # Set with one element ken, a subset of FIRM_COMM #
+   S@land0 # Set with one element land0, a subset of FIRM_COMM #
+   S@land # Set with one element land, a subset of FIRM_COMM #
+   S@vol # Set with one element vol, a subset of FIRM_COMM #
+   S@vaen # Set with one element vaen, a subset of FIRM_COMM #
+   S@forestry # Set with one element forestry, a subset of ALL_INDS #
+   S@EthanolC # Set with one element EthanolC, a subset of ALL_INDS #
+   S@EthanolS # Set with one element EthanolS, a subset of ALL_INDS #
+   S@Vol_Soy # Set with one element Vol_Soy, a subset of ALL_INDS #
+   S@Vol_Palm # Set with one element Vol_Palm, a subset of ALL_INDS #
+   S@Vol_Rape # Set with one element Vol_Rape, a subset of ALL_INDS #
+   S@Vol_Oth # Set with one element Vol_Oth, a subset of ALL_INDS #
+   S@GRNATJ # Set with one element GRNATJ, a subset of ALL_INDS #
+   S@GRNETJ # Set with one element GRNETJ, a subset of ALL_INDS #
+   S@SUGATJ # Set with one element SUGATJ, a subset of ALL_INDS #
+   S@SUGETJ # Set with one element SUGETJ, a subset of ALL_INDS #
+   S@SUGSIP # Set with one element SUGSIP, a subset of ALL_INDS #
+   S@CAMHRJ # Set with one element CAMHRJ, a subset of ALL_INDS #
+   S@CRNHRJ # Set with one element CRNHRJ, a subset of ALL_INDS #
+  
+  
+  
+ INPUT CHECK SUMMARY
+ -------------------
+  
+  Total number of statements is 1842.
+  There are NO syntax errors or semantic problems.
+  
+  Do you want to see a SUMMARY of the model        [s], or
+              perform CONDENSATION                 [c], or
+              proceed to AUTOMATIC CODE GENERATION [a], or
+              EXIT from TABLO                      [e] :
+  
+   (Enter a carriage return to proceed directly
+    to AUTOMATIC CODE GENERATION)
+  
+  
+ c           ! Perform condensation.
+  
+ --> Starting CONDENSATION
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ o           ! Omit one or more variables.
+  
+  Enter the name(s) of the variables to omit
+   typing ONE variable per line and
+   ending the list with a blank line :
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ atall
+  
+  
+ !tf
+  
+  
+ !tfd0
+  
+  
+ !tfm0
+  
+  
+ !tgd
+  
+  
+ !tgm
+  
+  
+ !tpd
+  
+  
+ !tpm
+  
+  
+  
+  
+  List of variables to omit :
+    1  atall
+  
+  This omission was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 1.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ b           ! Substitute a variable and backsolve for it.
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ pgov
+  
+  List of equations containing 'pgov' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+      7      |  GPRICEINDEX
+      8      |  GOVDMNDS
+      9      |  GOVU
+    208      |  PRICEINDEXREG
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ GPRICEINDEX
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 2.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ qg
+  
+  List of equations containing 'qg' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+      8      |  GOVDMNDS
+     13      |  GHHLDAGRIMP
+     14      |  GHHLDDOM
+    223      |  VGDP_r
+    225      |  QGDP_r
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ GOVDMNDS
+  
+  To simplify the 'pop' part of equation 'VGDP_r', we will set
+  
+       (ALL,r,REG) C00325(r)
+  
+   equal to the following expression:
+  
+       -SUM(i,TRAD_COMM,VGA(i,r))
+  
+  
+  To simplify the 'pg' part of equation 'VGDP_r', we will set
+  
+       (ALL,i,TRAD_COMM) (ALL,r,REG) C00326(i,r)
+  
+   equal to the following expression:
+  
+       -VGA(i,r) * {-1.0 + 1.0} + -SUM(XX01,TRAD_COMM,VGA(XX01,r) * VGA(i,r)
+  
+        / GOVEXP(r))
+  
+  
+  To simplify the 'pg' part of equation 'QGDP_r', we will set
+  
+       (ALL,i,TRAD_COMM) (ALL,r,REG) C00327(i,r)
+  
+   equal to the following expression:
+  
+       VGA(i,r) + -SUM(XX01,TRAD_COMM,VGA(XX01,r) * VGA(i,r) / GOVEXP(r))
+  
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 3.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ pgd
+  
+  List of equations containing 'pgd' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+     10      |  GHHDPRICE
+     12      |  GCOMPRICE
+     14      |  GHHLDDOM
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ GHHDPRICE
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 4.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ pgm
+  
+  List of equations containing 'pgm' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+     11      |  GHHIPRICES
+     12      |  GCOMPRICE
+     13      |  GHHLDAGRIMP
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ GHHIPRICES
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 5.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ pg
+  
+  List of equations containing 'pg' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+      9      |  GOVU
+     12      |  GCOMPRICE
+     13      |  GHHLDAGRIMP
+     14      |  GHHLDDOM
+    208      |  PRICEINDEXREG
+    223      |  VGDP_r
+    224      |  PGDP_r
+    225      |  QGDP_r
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ GCOMPRICE
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 6.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ qgm
+  
+  List of equations containing 'qgm' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+     13      |  GHHLDAGRIMP
+     15      |  TGCRATIO
+    214      |  MKTCLIMP
+    239      |  EV_DECOMPOSITION
+    258      |  CONT_EV_qgmr
+    259      |  CONT_EV_qgmir
+    266      |  CONT_EV_alleffr
+    268      |  CONT_EV_alleffir_T
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ GHHLDAGRIMP
+  
+  To simplify the 'pm' part of equation 'TGCRATIO', we will set
+  
+       (ALL,i,TRAD_COMM) (ALL,r,REG) C00328(i,r)
+  
+   equal to the following expression:
+  
+       -{DGTAX(i,r) + IGTAX(i,r) * [-1.0 + ESUBD(i)] * [1   - GMSHR(i,r)]}
+  
+        + -SUM(XX01,TRAD_COMM,IGTAX(XX01,r) * VGA(i,r) / GOVEXP(r) * {1   -
+  
+       GMSHR(i,r)})
+  
+  
+  To simplify the 'tgd' part of equation 'TGCRATIO', we will set
+  
+       (ALL,i,TRAD_COMM) (ALL,r,REG) C00329(i,r)
+  
+   equal to the following expression:
+  
+       -{VDGA(i,r) + IGTAX(i,r) * [-1.0 + ESUBD(i)] * [1   - GMSHR(i,r)]} +
+  
+       -SUM(XX01,TRAD_COMM,IGTAX(XX01,r) * VGA(i,r) / GOVEXP(r) * {1   -
+  
+       GMSHR(i,r)})
+  
+  
+  To simplify the 'pim' part of equation 'TGCRATIO', we will set
+  
+       (ALL,i,TRAD_COMM) (ALL,r,REG) C00330(i,r)
+  
+   equal to the following expression:
+  
+       -IGTAX(i,r) * {1.0 - [ESUBD(i) - (-1.0 + ESUBD(i)) * GMSHR(i,r)]} + -
+  
+       SUM(XX01,TRAD_COMM,IGTAX(XX01,r) * VGA(i,r) / GOVEXP(r) * GMSHR(i,r))
+  
+  
+  To simplify the 'tgm' part of equation 'TGCRATIO', we will set
+  
+       (ALL,i,TRAD_COMM) (ALL,r,REG) C00331(i,r)
+  
+   equal to the following expression:
+  
+       -{VIGA(i,r) - IGTAX(i,r) * [ESUBD(i) - (-1.0 + ESUBD(i)) * GMSHR(i,r)
+  
+       ]} + -SUM(XX01,TRAD_COMM,IGTAX(XX01,r) * VGA(i,r) / GOVEXP(r) *
+  
+       GMSHR(i,r))
+  
+  
+  To simplify the 'pop' part of equation 'TGCRATIO', we will set
+  
+       (ALL,r,REG) C00332(r)
+  
+   equal to the following expression:
+  
+       -SUM(i,TRAD_COMM,IGTAX(i,r))
+  
+  
+  To simplify the 'pm' part of equation 'EV_DECOMPOSITION', we will set
+  
+       (ALL,i,TRAD_COMM) (ALL,r,REG) C00333(i,r)
+  
+   equal to the following expression:
+  
+       -0.01   * EVSCALFACT(r) * IGTAX(i,r) * {-1.0 + ESUBD(i)} * {1   -
+  
+       GMSHR(i,r)} + -0.01   * EVSCALFACT(r) * SUM(XX01,TRAD_COMM,
+  
+       IGTAX(XX01,r) * VGA(i,r) / GOVEXP(r) * {1   - GMSHR(i,r)})
+  
+  
+  To simplify the 'pim' part of equation 'EV_DECOMPOSITION', we will set
+  
+       (ALL,i,TRAD_COMM) (ALL,r,REG) C00334(i,r)
+  
+   equal to the following expression:
+  
+       0.01   * EVSCALFACT(r) * IGTAX(i,r) * {ESUBD(i) - [-1.0 + ESUBD(i)]
+  
+        * GMSHR(i,r)} + -0.01   * EVSCALFACT(r) * SUM(XX01,TRAD_COMM,
+  
+       IGTAX(XX01,r) * VGA(i,r) / GOVEXP(r) * GMSHR(i,r))
+  
+  
+  To simplify the 'pop' part of equation 'EV_DECOMPOSITION', we will set
+  
+       (ALL,r,REG) C00335(r)
+  
+   equal to the following expression:
+  
+       -{0.01   * EVSCALFACT(r) * [SUM(i,NSAV_COMM,-PTAX(i,r)) +
+  
+       SUM(i,ENDW_COMM,SUM(j,ALL_INDS,-ETAX(i,j,r))) + SUM(j,ALL_INDS,
+  
+       SUM(i,TRAD_COMM,-IFTAX(i,j,r))) + SUM(j,ALL_INDS,SUM(i,TRAD_COMM,-
+  
+       DFTAX(i,j,r))) + SUM(i,TRAD_COMM,-IPTAX(i,r)) + SUM(i,TRAD_COMM,-
+  
+       DPTAX(i,r)) + SUM(i,TRAD_COMM,IGTAX(i,r) * (1.0 - 1.0)) +
+  
+       SUM(i,TRAD_COMM,-DGTAX(i,r)) + SUM(i,TRAD_COMM,SUM(s,REG,-XTAXD(i,r,
+  
+       s))) + SUM(i,TRAD_COMM,SUM(s,REG,-MTAX(i,s,r))) + SUM(i,ENDW_COMM,-
+  
+       VOA(i,r)) + VDEP(r)] + 0.01   * INCOMEEV(r)}
+  
+  
+  To simplify the 'ug' part of equation 'EV_DECOMPOSITION', we will set
+  
+       (ALL,r,REG) C00336(r)
+  
+   equal to the following expression:
+  
+       -0.01   * EVSCALFACT(r) * SUM(i,TRAD_COMM,IGTAX(i,r))
+  
+  
+  To simplify the 'ao' part of equation 'EV_DECOMPOSITION', we will set
+  
+       (ALL,r,REG) C00337(r)
+  
+   equal to the following expression:
+  
+       -0.01   * EVSCALFACT(r) * SUM(k,ETHA_COMM,VOA(k,r))
+  
+  
+  To simplify the 'ao' part of equation 'EV_DECOMPOSITION', we will set
+  
+       (ALL,r,REG) C00338(r)
+  
+   equal to the following expression:
+  
+       -0.01   * EVSCALFACT(r) * SUM(k,ETHAS_COMM,VOA(k,r))
+  
+  
+  To simplify the 'ao' part of equation 'EV_DECOMPOSITION', we will set
+  
+       (ALL,r,REG) C00339(r)
+  
+   equal to the following expression:
+  
+       -0.01   * EVSCALFACT(r) * SUM(k,BIOD_COMM,VOA(k,r))
+  
+  
+  To simplify the 'ao' part of equation 'EV_DECOMPOSITION', we will set
+  
+       (ALL,r,REG) C00340(r)
+  
+   equal to the following expression:
+  
+       -0.01   * EVSCALFACT(r) * SUM(k,BIOP_COMM,VOA(k,r))
+  
+  
+  To simplify the 'ao' part of equation 'EV_DECOMPOSITION', we will set
+  
+       (ALL,r,REG) C00341(r)
+  
+   equal to the following expression:
+  
+       -0.01   * EVSCALFACT(r) * SUM(k,BIOR_COMM,VOA(k,r))
+  
+  
+  To simplify the 'ao' part of equation 'EV_DECOMPOSITION', we will set
+  
+       (ALL,r,REG) C00342(r)
+  
+   equal to the following expression:
+  
+       -0.01   * EVSCALFACT(r) * SUM(k,BIOC_COMM,VOA(k,r))
+  
+  
+  To simplify the 'ao' part of equation 'EV_DECOMPOSITION', we will set
+  
+       (ALL,r,REG) C00343(r)
+  
+   equal to the following expression:
+  
+       -0.01   * EVSCALFACT(r) * SUM(k,GRNATJ_COMM,VOA(k,r))
+  
+  
+  To simplify the 'ao' part of equation 'EV_DECOMPOSITION', we will set
+  
+       (ALL,r,REG) C00344(r)
+  
+   equal to the following expression:
+  
+       -0.01   * EVSCALFACT(r) * SUM(k,GRNETJ_COMM,VOA(k,r))
+  
+  
+  To simplify the 'ao' part of equation 'EV_DECOMPOSITION', we will set
+  
+       (ALL,r,REG) C00345(r)
+  
+   equal to the following expression:
+  
+       -0.01   * EVSCALFACT(r) * SUM(k,SUGATJ_COMM,VOA(k,r))
+  
+  
+  To simplify the 'ao' part of equation 'EV_DECOMPOSITION', we will set
+  
+       (ALL,r,REG) C00346(r)
+  
+   equal to the following expression:
+  
+       -0.01   * EVSCALFACT(r) * SUM(k,SUGETJ_COMM,VOA(k,r))
+  
+  
+  To simplify the 'ao' part of equation 'EV_DECOMPOSITION', we will set
+  
+       (ALL,r,REG) C00347(r)
+  
+   equal to the following expression:
+  
+       -0.01   * EVSCALFACT(r) * SUM(k,SUGSIP_COMM,VOA(k,r))
+  
+  
+  To simplify the 'ao' part of equation 'EV_DECOMPOSITION', we will set
+  
+       (ALL,r,REG) C00348(r)
+  
+   equal to the following expression:
+  
+       -0.01   * EVSCALFACT(r) * SUM(k,CAMHRJ_COMM,VOA(k,r))
+  
+  
+  To simplify the 'ao' part of equation 'EV_DECOMPOSITION', we will set
+  
+       (ALL,r,REG) C00349(r)
+  
+   equal to the following expression:
+  
+       -0.01   * EVSCALFACT(r) * SUM(k,CRNHRJ_COMM,VOA(k,r))
+  
+  
+  To simplify the 'pm' part of equation 'CONT_EV_qgmr', we will set
+  
+       (ALL,i,TRAD_COMM) (ALL,r,REG) C00350(i,r)
+  
+   equal to the following expression:
+  
+       -IGTAX(i,r) * 0.01   * EVSCALFACT(r) * {-1.0 + ESUBD(i)} * {1   -
+  
+       GMSHR(i,r)} + -SUM(XX01,TRAD_COMM,IGTAX(XX01,r) * 0.01   *
+  
+       EVSCALFACT(r) * VGA(i,r) / GOVEXP(r) * {1   - GMSHR(i,r)})
+  
+  
+  To simplify the 'pim' part of equation 'CONT_EV_qgmr', we will set
+  
+       (ALL,i,TRAD_COMM) (ALL,r,REG) C00351(i,r)
+  
+   equal to the following expression:
+  
+       IGTAX(i,r) * 0.01   * EVSCALFACT(r) * {ESUBD(i) - [-1.0 + ESUBD(i)]
+  
+        * GMSHR(i,r)} + -SUM(XX01,TRAD_COMM,IGTAX(XX01,r) * 0.01   *
+  
+       EVSCALFACT(r) * VGA(i,r) / GOVEXP(r) * GMSHR(i,r))
+  
+  
+  To simplify the 'pop' part of equation 'CONT_EV_qgmr', we will set
+  
+       (ALL,r,REG) C00352(r)
+  
+   equal to the following expression:
+  
+       -SUM(i,TRAD_COMM,IGTAX(i,r) * 0.01   * EVSCALFACT(r) * {1.0 - 1.0})
+  
+  
+  To simplify the 'ug' part of equation 'CONT_EV_qgmr', we will set
+  
+       (ALL,r,REG) C00353(r)
+  
+   equal to the following expression:
+  
+       -SUM(i,TRAD_COMM,IGTAX(i,r) * 0.01   * EVSCALFACT(r))
+  
+  
+  To simplify the 'pop' part of equation 'CONT_EV_alleffr', we will set
+  
+       (ALL,r,REG) C00354(r)
+  
+   equal to the following expression:
+  
+       -0.01   * EVSCALFACT(r) * {SUM(i,NSAV_COMM,-PTAX(i,r)) +
+  
+       SUM(i,ENDW_COMM,SUM(j,ALL_INDS,-ETAX(i,j,r))) + SUM(j,ALL_INDS,
+  
+       SUM(i,TRAD_COMM,-IFTAX(i,j,r))) + SUM(j,ALL_INDS,SUM(i,TRAD_COMM,-
+  
+       DFTAX(i,j,r))) + SUM(i,TRAD_COMM,-IPTAX(i,r)) + SUM(i,TRAD_COMM,-
+  
+       DPTAX(i,r)) + SUM(i,TRAD_COMM,IGTAX(i,r) * [1.0 - 1.0]) +
+  
+       SUM(i,TRAD_COMM,-DGTAX(i,r)) + SUM(i,TRAD_COMM,SUM(s,REG,-XTAXD(i,r,
+  
+       s))) + SUM(i,TRAD_COMM,SUM(s,REG,-MTAX(i,s,r)))}
+  
+  
+  To simplify the 'pop' part of equation 'CONT_EV_alleffir_T', we will set
+  
+       (ALL,i,TRAD_COMM) (ALL,r,REG) C00355(i,r)
+  
+   equal to the following expression:
+  
+       -0.01   * EVSCALFACT(r) * {-PTAX(i,r) + SUM(j,ALL_INDS,-IFTAX(i,j,r))
+  
+        + SUM(j,ALL_INDS,-DFTAX(i,j,r)) - IPTAX(i,r) - DPTAX(i,r) + IGTAX(i,
+  
+       r) * [1.0 - 1.0] - DGTAX(i,r) + SUM(s,REG,-XTAXD(i,r,s)) + SUM(s,REG,
+  
+       -MTAX(i,s,r))}
+  
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 7.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ ppd
+  
+  List of equations containing 'ppd' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+     18      |  PHHDPRICE
+     25      |  PCOMPRICE
+     26      |  PHHLDDOM
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ PHHDPRICE
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 8.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ ppm
+  
+  List of equations containing 'ppm' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+     21      |  PHHIPRICES
+     25      |  PCOMPRICE
+     27      |  PHHLDAGRIMP
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ PHHIPRICES
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 9.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ qpm
+  
+  List of equations containing 'qpm' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+     22      |  TPCRATIONBIO
+     23      |  TPCRATIOBIO
+     27      |  PHHLDAGRIMP
+    214      |  MKTCLIMP
+    239      |  EV_DECOMPOSITION
+    254      |  CONT_EV_qpmr
+    255      |  CONT_EV_qpmir
+    266      |  CONT_EV_alleffr
+    268      |  CONT_EV_alleffir_T
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ PHHLDAGRIMP
+  
+  To simplify the 'pop' part of equation 'CONT_EV_qpmr', we will set
+  
+       (ALL,r,REG) C00356(r)
+  
+   equal to the following expression:
+  
+       -SUM(i,TRAD_COMM,-IPTAX(i,r) * 0.01   * EVSCALFACT(r))
+  
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 10.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ qpt
+  
+  List of equations containing 'qpt' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+     22      |  TPCRATIONBIO
+     23      |  TPCRATIOBIO
+     26      |  PHHLDDOM
+     28      |  E_QPT
+    214      |  MKTCLIMP
+    223      |  VGDP_r
+    225      |  QGDP_r
+    239      |  EV_DECOMPOSITION
+    254      |  CONT_EV_qpmr
+    255      |  CONT_EV_qpmir
+    266      |  CONT_EV_alleffr
+    268      |  CONT_EV_alleffir_T
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ E_QPT
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 11.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ ppt
+  
+  List of equations containing 'ppt' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+     22      |  TPCRATIONBIO
+     23      |  TPCRATIOBIO
+     25      |  PCOMPRICE
+     26      |  PHHLDDOM
+     29      |  E_PPT
+    214      |  MKTCLIMP
+    223      |  VGDP_r
+    224      |  PGDP_r
+    239      |  EV_DECOMPOSITION
+    254      |  CONT_EV_qpmr
+    255      |  CONT_EV_qpmir
+    266      |  CONT_EV_alleffr
+    268      |  CONT_EV_alleffir_T
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ E_PPT
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 12.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ qft
+  
+  List of equations containing 'qft' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+     51      |  INDIMP
+     52      |  INDDOM
+     56      |  QFTEQ
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ QFTEQ
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 13.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ pfd
+  
+  List of equations containing 'pfd' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+     45      |  DMNDDPRICE
+     50      |  ICOMPRICE
+     52      |  INDDOM
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ DMNDDPRICE
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 14.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ pfm
+  
+  List of equations containing 'pfm' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+     46      |  DMNDIPRICES
+     50      |  ICOMPRICE
+     51      |  INDIMP
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ DMNDIPRICES
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 15.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ qfm
+  
+  List of equations containing 'qfm' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+     47      |  TIURATIONBIO
+     48      |  TIURATIOBIO
+     51      |  INDIMP
+    108      |  E_BIOUSE0
+    214      |  MKTCLIMP
+    239      |  EV_DECOMPOSITION
+    248      |  CONT_EV_qfmr
+    249      |  CONT_EV_qfmir
+    250      |  CONT_EV_qfmijr
+    266      |  CONT_EV_alleffr
+    268      |  CONT_EV_alleffir_T
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ INDIMP
+  
+  To simplify the 'pm' part of equation 'TIURATIONBIO', we will set
+  
+       (ALL,i,NBIOOIL_COMM) (ALL,r,REG) C00357(i,r)
+  
+   equal to the following expression:
+  
+       -SUM(j,ALL_INDS,DFTAX(i,j,r))
+  
+  
+  To simplify the 'pim' part of equation 'TIURATIONBIO', we will set
+  
+       (ALL,i,NBIOOIL_COMM) (ALL,r,REG) C00358(i,r)
+  
+   equal to the following expression:
+  
+       -SUM(j,ALL_INDS,IFTAX(i,j,r) * {1.0 - ESUBD(i)})
+  
+  
+  To simplify the 'pm' part of equation 'TIURATIOBIO', we will set
+  
+       (ALL,i,BIOOIL_COMM) (ALL,r,REG) C00359(i,r)
+  
+   equal to the following expression:
+  
+       -SUM(j,ALL_INDS,DFTAX(i,j,r))
+  
+  
+  To simplify the 'pim' part of equation 'TIURATIOBIO', we will set
+  
+       (ALL,i,BIOOIL_COMM) (ALL,r,REG) C00360(i,r)
+  
+   equal to the following expression:
+  
+       -SUM(j,ALL_INDS,IFTAX(i,j,r) * {1.0 - ESUBD(i)})
+  
+  
+  To simplify the 'pim' part of equation 'MKTCLIMP', we will set
+  
+       (ALL,i,TRAD_COMM) (ALL,r,REG) C00361(i,r)
+  
+   equal to the following expression:
+  
+       SHRIGM(i,r) * {ESUBD(i) - [-1.0 + ESUBD(i)] * GMSHR(i,r)} + SHRIPM(i,
+  
+       r) * ESUBD(i) + SUM(j,ALL_INDS,SHRIFM(i,j,r) * ESUBD(i))
+  
+  
+  To simplify the 'pim' part of equation 'EV_DECOMPOSITION', we will set
+  
+       (ALL,i,TRAD_COMM) (ALL,r,REG) C00362(i,r)
+  
+   equal to the following expression:
+  
+       C00334(i,r) + 0.01   * EVSCALFACT(r) * IPTAX(i,r) * ESUBD(i) +
+  
+       SUM(j,ALL_INDS,0.01   * EVSCALFACT(r) * IFTAX(i,j,r) * ESUBD(i))
+  
+  
+  To simplify the 'pim' part of equation 'CONT_EV_qfmr', we will set
+  
+       (ALL,i,TRAD_COMM) (ALL,r,REG) C00363(i,r)
+  
+   equal to the following expression:
+  
+       -SUM(j,ALL_INDS,-IFTAX(i,j,r) * 0.01   * EVSCALFACT(r) * ESUBD(i))
+  
+  
+  To simplify the 'pop' part of equation 'CONT_EV_qfmr', we will set
+  
+       (ALL,r,REG) C00364(r)
+  
+   equal to the following expression:
+  
+       -SUM(i,TRAD_COMM,SUM(j,ALL_INDS,-IFTAX(i,j,r) * 0.01   *
+  
+       EVSCALFACT(r)))
+  
+  
+  To simplify the 'pop' part of equation 'CONT_EV_qfmir', we will set
+  
+       (ALL,i,TRAD_COMM) (ALL,r,REG) C00365(i,r)
+  
+   equal to the following expression:
+  
+       -SUM(j,ALL_INDS,-IFTAX(i,j,r) * 0.01   * EVSCALFACT(r))
+  
+  
+  To simplify the 'pim' part of equation 'CONT_EV_alleffir_T', we will set
+  
+       (ALL,i,TRAD_COMM) (ALL,r,REG) C00366(i,r)
+  
+   equal to the following expression:
+  
+       0.01   * EVSCALFACT(r) * IGTAX(i,r) * {ESUBD(i) - [-1.0 + ESUBD(i)]
+  
+        * GMSHR(i,r)} + 0.01   * EVSCALFACT(r) * IPTAX(i,r) * ESUBD(i) +
+  
+       SUM(j,ALL_INDS,0.01   * EVSCALFACT(r) * IFTAX(i,j,r) * ESUBD(i))
+  
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 16.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ ao
+  
+  List of equations containing 'ao' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+    113      |  AOWORLD
+    114      |  ZEROPROFITS1
+    129      |  ZEROPROFITS2
+    143      |  TOPDEMAND1
+    144      |  TOPDEMAND2
+    239      |  EV_DECOMPOSITION
+    271      |  CONT_EV_techr
+    272      |  CONT_EV_tech_aor
+    273      |  CONT_EV_tech_aoir1
+    274      |  CONT_EV_tech_aoir2
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ AOWORLD
+  
+  To simplify the 'aoreg' part of equation 'EV_DECOMPOSITION', we will set
+  
+       (ALL,r,REG) C00367(r)
+  
+   equal to the following expression:
+  
+       SUM(i,NETBD_INDS,-0.01   * EVSCALFACT(r) * VOA(i,r)) + C00337(r) +
+  
+       C00338(r) + C00339(r) + C00340(r) + C00341(r) + C00342(r) + C00343(r)
+  
+        + C00344(r) + C00345(r) + C00346(r) + C00347(r) + C00348(r) +
+  
+       C00349(r)
+  
+  
+  To simplify the 'aoreg' part of equation 'CONT_EV_techr', we will set
+  
+       (ALL,r,REG) C00368(r)
+  
+   equal to the following expression:
+  
+       -0.01   * EVSCALFACT(r) * {SUM(i,NETBD_INDS,VOA(i,r)) +
+  
+       SUM(k,ETHA_COMM,VOA(k,r)) + SUM(k,ETHAS_COMM,VOA(k,r)) +
+  
+       SUM(k,BIOD_COMM,VOA(k,r)) + SUM(k,BIOP_COMM,VOA(k,r)) +
+  
+       SUM(k,BIOR_COMM,VOA(k,r)) + SUM(k,BIOC_COMM,VOA(k,r)) +
+  
+       SUM(k,CAMHRJ_COMM,VOA(k,r)) + SUM(k,CRNHRJ_COMM,VOA(k,r)) +
+  
+       SUM(k,GRNATJ_COMM,VOA(k,r)) + SUM(k,GRNETJ_COMM,VOA(k,r)) +
+  
+       SUM(k,SUGATJ_COMM,VOA(k,r)) + SUM(k,SUGETJ_COMM,VOA(k,r)) +
+  
+       SUM(k,SUGSIP_COMM,VOA(k,r))}
+  
+  
+  To simplify the 'aoblend' part of equation 'CONT_EV_tech_aor', we will set
+  
+       (ALL,r,REG) C00369(r)
+  
+   equal to the following expression:
+  
+       -SUM(k,CAMHRJ_COMM,VOA(k,r))
+  
+  
+  To simplify the 'aoblend' part of equation 'CONT_EV_tech_aor', we will set
+  
+       (ALL,r,REG) C00370(r)
+  
+   equal to the following expression:
+  
+       -SUM(k,CRNHRJ_COMM,VOA(k,r))
+  
+  
+  To simplify the 'aoblend' part of equation 'CONT_EV_tech_aor', we will set
+  
+       (ALL,r,REG) C00371(r)
+  
+   equal to the following expression:
+  
+       -SUM(k,GRNATJ_COMM,VOA(k,r))
+  
+  
+  To simplify the 'aoblend' part of equation 'CONT_EV_tech_aor', we will set
+  
+       (ALL,r,REG) C00372(r)
+  
+   equal to the following expression:
+  
+       -SUM(k,GRNETJ_COMM,VOA(k,r))
+  
+  
+  To simplify the 'aoblend' part of equation 'CONT_EV_tech_aor', we will set
+  
+       (ALL,r,REG) C00373(r)
+  
+   equal to the following expression:
+  
+       -SUM(k,SUGATJ_COMM,VOA(k,r))
+  
+  
+  To simplify the 'aoblend' part of equation 'CONT_EV_tech_aor', we will set
+  
+       (ALL,r,REG) C00374(r)
+  
+   equal to the following expression:
+  
+       -SUM(k,SUGETJ_COMM,VOA(k,r))
+  
+  
+  To simplify the 'aoblend' part of equation 'CONT_EV_tech_aor', we will set
+  
+       (ALL,r,REG) C00375(r)
+  
+   equal to the following expression:
+  
+       -SUM(k,SUGSIP_COMM,VOA(k,r))
+  
+  
+  To simplify the 'aoreg' part of equation 'CONT_EV_tech_aor', we will set
+  
+       (ALL,r,REG) C00376(r)
+  
+   equal to the following expression:
+  
+       -{0.01   * EVSCALFACT(r) * [SUM(i,NETBD_INDS,VOA(i,r)) +
+  
+       SUM(k,ETHA_COMM,VOA(k,r)) + SUM(k,ETHAS_COMM,VOA(k,r)) +
+  
+       SUM(k,BIOD_COMM,VOA(k,r)) + SUM(k,BIOP_COMM,VOA(k,r)) +
+  
+       SUM(k,BIOR_COMM,VOA(k,r)) + SUM(k,BIOC_COMM,VOA(k,r))] +
+  
+       SUM(k,CAMHRJ_COMM,VOA(k,r)) + SUM(k,CRNHRJ_COMM,VOA(k,r)) +
+  
+       SUM(k,GRNATJ_COMM,VOA(k,r)) + SUM(k,GRNETJ_COMM,VOA(k,r)) +
+  
+       SUM(k,SUGATJ_COMM,VOA(k,r)) + SUM(k,SUGETJ_COMM,VOA(k,r)) +
+  
+       SUM(k,SUGSIP_COMM,VOA(k,r))}
+  
+  
+  To simplify the 'aoblend' part of equation 'CONT_EV_tech_aoir2', we will set
+  
+       (ALL,i,ETBD_INDS) (ALL,r,REG) C00377(i,r)
+  
+   equal to the following expression:
+  
+       -0.01   * EVSCALFACT(r) * {SELECT(i,"EthanolC") * SUM(k,ETHA_COMM,
+  
+       VOA(k,r)) + SELECT(i,"EthanolS") * SUM(k,ETHAS_COMM,VOA(k,r)) +
+  
+       SELECT(i,"Vol_Soy") * SUM(k,BIOD_COMM,VOA(k,r)) + SELECT(i,
+  
+       "Vol_Palm") * SUM(k,BIOP_COMM,VOA(k,r)) + SELECT(i,"VOl_Rape") *
+  
+       SUM(k,BIOR_COMM,VOA(k,r)) + SELECT(i,"VOL_Oth") * SUM(k,BIOC_COMM,
+  
+       VOA(k,r)) + SELECT(i,"CAMHRJ") * SUM(k,CAMHRJ_COMM,VOA(k,r)) +
+  
+       SELECT(i,"CRNHRJ") * SUM(k,CRNHRJ_COMM,VOA(k,r)) + SELECT(i,"GRNATJ")
+  
+        * SUM(k,GRNATJ_COMM,VOA(k,r)) + SELECT(i,"GRNETJ") *
+  
+       SUM(k,GRNETJ_COMM,VOA(k,r)) + SELECT(i,"SUGATJ") * SUM(k,SUGATJ_COMM,
+  
+       VOA(k,r)) + SELECT(i,"SUGETJ") * SUM(k,SUGETJ_COMM,VOA(k,r)) +
+  
+       SELECT(i,"SUGSIP") * SUM(k,SUGSIP_COMM,VOA(k,r))}
+  
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 17.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ af
+  
+  List of equations containing 'af' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+     63      |  AFWORLD
+     64      |  CDDGCPRICE
+     65      |  CDDGCDEMAND
+     66      |  CDDGSPRICE
+     67      |  CDDGSDEMAND
+     68      |  CDDGPRICE
+     69      |  CDDGDEMAND
+     70      |  OBDBSPRICE
+     71      |  OBDBSDEMAND
+     72      |  OBDBPPRICE
+     73      |  OBDBPDEMAND
+     74      |  OBDBORRICE
+     75      |  OBDBRDEMAND
+     76      |  OBDBOPRICE
+     77      |  OBDBODEMAND
+     78      |  OBDBPRICE
+     79      |  OBDBDEMAND
+     80      |  OBCDPRICE
+     81      |  OBCDDEMAND
+     82      |  LVFEEDPRICE
+     83      |  LVFEEDDEMAND
+     84      |  CRFEEDPRICE
+     85      |  CRFEEDDEMAND
+     86      |  FEEDPRICE
+     87      |  FEEDDEMAND
+     88      |  BIOOILPRICE
+     89      |  BIOOILDEMAND
+     90      |  NCOALPRICE
+     91      |  NCOALDEMAND
+     92      |  NELYPRICE
+     93      |  NELYDEMAND
+     94      |  ELECPRICE
+     95      |  ELECDEMAND
+     96      |  ENYPRICE
+     97      |  ENYDEMAND
+     98      |  CAPENPRICE
+     99      |  CAPENDEMAND
+    100      |  AEZPRICE
+    101      |  AEZDEMAND
+    102      |  PSTURPRICE
+    103      |  PSTURDEMAND
+    104      |  PRICE
+    105      |  VOLDEMAND
+    106      |  VAENPRICE
+    107      |  VAENDEMAND
+    114      |  ZEROPROFITS1
+    129      |  ZEROPROFITS2
+    143      |  TOPDEMAND1
+    144      |  TOPDEMAND2
+    239      |  EV_DECOMPOSITION
+    271      |  CONT_EV_techr
+    275      |  CONT_EV_tech_afr
+    276      |  CONT_EV_tech_afijr
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ AFWORLD
+  
+  To simplify the 'afsec' part of equation 'CDDGCPRICE', we will set
+  
+       (ALL,j,ALL_INDS) (ALL,r,REG) C00378(j,r)
+  
+   equal to the following expression:
+  
+       -SUM(k,CDDGC_COMM,-CSHCDDGC(k,j,r))
+  
+  
+  To simplify the 'afsec' part of equation 'CDDGSPRICE', we will set
+  
+       (ALL,j,ALL_INDS) (ALL,r,REG) C00379(j,r)
+  
+   equal to the following expression:
+  
+       -SUM(k,CDDGS_COMM,-CSHCDDGS(k,j,r))
+  
+  
+  To simplify the 'afsec' part of equation 'CDDGPRICE', we will set
+  
+       (ALL,j,ALL_INDS) (ALL,r,REG) C00380(j,r)
+  
+   equal to the following expression:
+  
+       -SUM(k,CDDG_COMM,-CSHCDDG(k,j,r))
+  
+  
+  To simplify the 'afsec' part of equation 'OBDBSPRICE', we will set
+  
+       (ALL,j,ALL_INDS) (ALL,r,REG) C00381(j,r)
+  
+   equal to the following expression:
+  
+       -SUM(k,OBDBS_COMM,-CSHOBDBS(k,j,r))
+  
+  
+  To simplify the 'afsec' part of equation 'OBDBPPRICE', we will set
+  
+       (ALL,j,ALL_INDS) (ALL,r,REG) C00382(j,r)
+  
+   equal to the following expression:
+  
+       -SUM(k,OBDBP_COMM,-CSHOBDBP(k,j,r))
+  
+  
+  To simplify the 'afsec' part of equation 'OBDBORRICE', we will set
+  
+       (ALL,j,ALL_INDS) (ALL,r,REG) C00383(j,r)
+  
+   equal to the following expression:
+  
+       -SUM(k,OBDBR_COMM,-CSHOBDBR(k,j,r))
+  
+  
+  To simplify the 'afsec' part of equation 'OBDBOPRICE', we will set
+  
+       (ALL,j,ALL_INDS) (ALL,r,REG) C00384(j,r)
+  
+   equal to the following expression:
+  
+       -SUM(k,OBDBO_COMM,-CSHOBDBO(k,j,r))
+  
+  
+  To simplify the 'afsec' part of equation 'OBDBPRICE', we will set
+  
+       (ALL,j,ALL_INDS) (ALL,r,REG) C00385(j,r)
+  
+   equal to the following expression:
+  
+       -SUM(k,OBDB_COMM,-CSHOBDB(k,j,r))
+  
+  
+  To simplify the 'afsec' part of equation 'OBCDPRICE', we will set
+  
+       (ALL,j,ALL_INDS) (ALL,r,REG) C00386(j,r)
+  
+   equal to the following expression:
+  
+       -SUM(k,OBCD_COMM,-CSHOBCD(k,j,r))
+  
+  
+  To simplify the 'afsec' part of equation 'LVFEEDPRICE', we will set
+  
+       (ALL,j,ALL_INDS) (ALL,r,REG) C00387(j,r)
+  
+   equal to the following expression:
+  
+       -SUM(k,LVFEED_COMM,-CSHLVFEED(k,j,r))
+  
+  
+  To simplify the 'afsec' part of equation 'CRFEEDPRICE', we will set
+  
+       (ALL,j,ALL_INDS) (ALL,r,REG) C00388(j,r)
+  
+   equal to the following expression:
+  
+       -SUM(k,CRFEED_COMM,-CSHCRFEED(k,j,r))
+  
+  
+  To simplify the 'afsec' part of equation 'FEEDPRICE', we will set
+  
+       (ALL,j,ALL_INDS) (ALL,r,REG) C00389(j,r)
+  
+   equal to the following expression:
+  
+       -SUM(k,FEED_COMM,-CSHFEED(k,j,r))
+  
+  
+  To simplify the 'afsec' part of equation 'BIOOILPRICE', we will set
+  
+       (ALL,j,ALL_INDS) (ALL,r,REG) C00390(j,r)
+  
+   equal to the following expression:
+  
+       -SUM(k,BIOOIL_COMM,-CSHBIOOIL(k,j,r))
+  
+  
+  To simplify the 'afsec' part of equation 'NCOALPRICE', we will set
+  
+       (ALL,j,ALL_INDS) (ALL,r,REG) C00391(j,r)
+  
+   equal to the following expression:
+  
+       -SUM(k,NCOAL_COMM,-CSHNCOAL(k,j,r))
+  
+  
+  To simplify the 'afsec' part of equation 'NELYPRICE', we will set
+  
+       (ALL,j,ALL_INDS) (ALL,r,REG) C00392(j,r)
+  
+   equal to the following expression:
+  
+       -SUM(k,NELY_COMM,-CSHNELY(k,j,r))
+  
+  
+  To simplify the 'afsec' part of equation 'ELECPRICE', we will set
+  
+       (ALL,j,ALL_INDS) (ALL,r,REG) C00393(j,r)
+  
+   equal to the following expression:
+  
+       -SUM(k,ELEC_COMM,-CSELEC(k,j,r))
+  
+  
+  To simplify the 'afsec' part of equation 'ENYPRICE', we will set
+  
+       (ALL,j,ALL_INDS) (ALL,r,REG) C00394(j,r)
+  
+   equal to the following expression:
+  
+       -SUM(k,ENY_COMM,-CSHENY(k,j,r))
+  
+  
+  To simplify the 'afsec' part of equation 'CAPENPRICE', we will set
+  
+       (ALL,j,ALL_INDS) (ALL,r,REG) C00395(j,r)
+  
+   equal to the following expression:
+  
+       -SUM(k,KEN_COMM,-CSHKEN(k,j,r))
+  
+  
+  To simplify the 'afsec' part of equation 'AEZPRICE', we will set
+  
+       (ALL,j,ALL_INDS) (ALL,r,REG) C00396(j,r)
+  
+   equal to the following expression:
+  
+       -SUM(k,AEZ_COMM,-CSHAEZ(k,j,r))
+  
+  
+  To simplify the 'afsec' part of equation 'PSTURPRICE', we will set
+  
+       (ALL,j,ALL_INDS) (ALL,r,REG) C00397(j,r)
+  
+   equal to the following expression:
+  
+       -SUM(k,PSTUR_COMM,-CSHPSTUR(k,j,r))
+  
+  
+  To simplify the 'afsec' part of equation 'PRICE', we will set
+  
+       (ALL,j,ALL_INDS) (ALL,r,REG) C00398(j,r)
+  
+   equal to the following expression:
+  
+       -SUM(k,Vol_COMM,-CSHVOL(k,j,r))
+  
+  
+  To simplify the 'afsec' part of equation 'VAENPRICE', we will set
+  
+       (ALL,j,ALL_INDS) (ALL,r,REG) C00399(j,r)
+  
+   equal to the following expression:
+  
+       -SUM(k,VAEN_COMM,-CSHVAEN(k,j,r))
+  
+  
+  To simplify the 'afsec' part of equation 'ZEROPROFITS1', we will set
+  
+       (ALL,j,NETBD_INDS) (ALL,r,REG) C00400(j,r)
+  
+   equal to the following expression:
+  
+       SUM(i,TOP_COMM,CSHTOP(i,j,r))
+  
+  
+  To simplify the 'afsec' part of equation 'ZEROPROFITS2', we will set
+  
+       (ALL,j,ETBD_INDS) (ALL,r,REG) C00401(j,r)
+  
+   equal to the following expression:
+  
+       SUM(i,TOP_COMM,CSHTOP(i,j,r))
+  
+  
+  To simplify the 'afenergy' part of equation 'EV_DECOMPOSITION', we will set
+  
+       (ALL,i,FIRM_COMM) (ALL,r,REG) C00402(i,r)
+  
+   equal to the following expression:
+  
+       SUM(j,ALL_INDS,-0.01   * EVSCALFACT(r) * VFA(i,j,r))
+  
+  
+  To simplify the 'afsec' part of equation 'EV_DECOMPOSITION', we will set
+  
+       (ALL,j,ALL_INDS) (ALL,r,REG) C00403(j,r)
+  
+   equal to the following expression:
+  
+       SUM(i,FIRM_COMM,-0.01   * EVSCALFACT(r) * VFA(i,j,r))
+  
+  
+  To simplify the 'afreg' part of equation 'EV_DECOMPOSITION', we will set
+  
+       (ALL,r,REG) C00404(r)
+  
+   equal to the following expression:
+  
+       SUM(i,FIRM_COMM,SUM(j,ALL_INDS,-0.01   * EVSCALFACT(r) * VFA(i,j,r)))
+  
+  
+  To simplify the 'afenergy' part of equation 'CONT_EV_tech_afr', we will set
+  
+       (ALL,i,FIRM_COMM) (ALL,r,REG) C00405(i,r)
+  
+   equal to the following expression:
+  
+       -0.01   * EVSCALFACT(r) * SUM(j,ALL_INDS,VFA(i,j,r))
+  
+  
+  To simplify the 'afsec' part of equation 'CONT_EV_tech_afr', we will set
+  
+       (ALL,j,ALL_INDS) (ALL,r,REG) C00406(j,r)
+  
+   equal to the following expression:
+  
+       -0.01   * EVSCALFACT(r) * SUM(i,FIRM_COMM,VFA(i,j,r))
+  
+  
+  To simplify the 'afreg' part of equation 'CONT_EV_tech_afr', we will set
+  
+       (ALL,r,REG) C00407(r)
+  
+   equal to the following expression:
+  
+       -0.01   * EVSCALFACT(r) * SUM(j,ALL_INDS,SUM(i,FIRM_COMM,VFA(i,j,r)))
+  
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 18.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ qfe
+  
+  List of equations containing 'qfe' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+     44      |  TFURATIO
+     55      |  QFEEQ
+    215      |  MKTCLENDWM
+    216      |  MKTCLENDWS
+    239      |  EV_DECOMPOSITION
+    245      |  CONT_EV_qfer
+    246      |  CONT_EV_qfeir
+    247      |  CONT_EV_qfeijr
+    266      |  CONT_EV_alleffr
+    267      |  CONT_EV_alleffir_E
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ QFEEQ
+  
+  To simplify the 'pm' part of equation 'TFURATIO', we will set
+  
+       (ALL,i,ENDWM_COMM) (ALL,r,REG) C00408(i,r)
+  
+   equal to the following expression:
+  
+       -SUM(j,ALL_INDS,ETAX(i,j,r))
+  
+  
+  To simplify the 'pop' part of equation 'CONT_EV_qfer', we will set
+  
+       (ALL,r,REG) C00409(r)
+  
+   equal to the following expression:
+  
+       -SUM(i,ENDW_COMM,SUM(j,ALL_INDS,-ETAX(i,j,r) * 0.01   * EVSCALFACT(r)
+  
+       ))
+  
+  
+  To simplify the 'pop' part of equation 'CONT_EV_qfeir', we will set
+  
+       (ALL,i,ENDW_COMM) (ALL,r,REG) C00410(i,r)
+  
+   equal to the following expression:
+  
+       -SUM(j,ALL_INDS,-ETAX(i,j,r) * 0.01   * EVSCALFACT(r))
+  
+  
+  To simplify the 'pop' part of equation 'CONT_EV_alleffir_E', we will set
+  
+       (ALL,i,ENDW_COMM) (ALL,r,REG) C00411(i,r)
+  
+   equal to the following expression:
+  
+       -0.01   * EVSCALFACT(r) * {-PTAX(i,r) + SUM(j,ALL_INDS,-ETAX(i,j,r))}
+  
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 19.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ pfob
+  
+  List of equations containing 'pfob' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+    162      |  EXPRICES
+    163      |  TEXPRATIO
+    175      |  FOBCIF
+    223      |  VGDP_r
+    224      |  PGDP_r
+    239      |  EV_DECOMPOSITION
+    282      |  EXPPRICE_MARG
+    283      |  EXPPRICE_NMRG
+    284      |  IMPPRICE1_MARG
+    285      |  IMPPRICE1_NMRG
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ EXPRICES
+  
+  To simplify the 'pm' part of equation 'TEXPRATIO', we will set
+  
+       (ALL,i,TRAD_COMM) (ALL,r,REG) C00412(i,r)
+  
+   equal to the following expression:
+  
+       -SUM(s,REG,XTAXD(i,r,s))
+  
+  
+  To simplify the 'tx' part of equation 'TEXPRATIO', we will set
+  
+       (ALL,i,TRAD_COMM) (ALL,r,REG) C00413(i,r)
+  
+   equal to the following expression:
+  
+       -SUM(s,REG,-VXMD(i,r,s) - XTAXD(i,r,s))
+  
+  
+  To simplify the 'pm' part of equation 'VGDP_r', we will set
+  
+       (ALL,i,TRAD_COMM) (ALL,r,REG) C00414(i,r)
+  
+   equal to the following expression:
+  
+       C00326(i,r) * {1   - GMSHR(i,r)} + SUM(s,REG,-VXWD(i,r,s))
+  
+  
+  To simplify the 'tx' part of equation 'VGDP_r', we will set
+  
+       (ALL,i,TRAD_COMM) (ALL,r,REG) C00415(i,r)
+  
+   equal to the following expression:
+  
+       SUM(s,REG,VXWD(i,r,s))
+  
+  
+  To simplify the 'pm' part of equation 'PGDP_r', we will set
+  
+       (ALL,i,TRAD_COMM) (ALL,r,REG) C00416(i,r)
+  
+   equal to the following expression:
+  
+       -VGA(i,r) * {1   - GMSHR(i,r)} + SUM(s,REG,-VXWD(i,r,s))
+  
+  
+  To simplify the 'pm' part of equation 'EV_DECOMPOSITION', we will set
+  
+       (ALL,i,TRAD_COMM) (ALL,r,REG) C00417(i,r)
+  
+   equal to the following expression:
+  
+       C00333(i,r) + SUM(s,REG,-0.01   * EVSCALFACT(r) * VXWD(i,r,s))
+  
+  
+  To simplify the 'tx' part of equation 'EV_DECOMPOSITION', we will set
+  
+       (ALL,i,TRAD_COMM) (ALL,r,REG) C00418(i,r)
+  
+   equal to the following expression:
+  
+       SUM(s,REG,0.01   * EVSCALFACT(r) * VXWD(i,r,s))
+  
+  
+  To simplify the 'pm' part of equation 'EXPPRICE_MARG', we will set
+  
+       (ALL,m,MARG_COMM) (ALL,r,REG) C00419(m,r)
+  
+   equal to the following expression:
+  
+       -{SUM(s,REG,SX_IRS(m,r,s)) + SXT_IR(m,r)}
+  
+  
+  To simplify the 'tx' part of equation 'EXPPRICE_MARG', we will set
+  
+       (ALL,m,MARG_COMM) (ALL,r,REG) C00420(m,r)
+  
+   equal to the following expression:
+  
+       -SUM(s,REG,-SX_IRS(m,r,s))
+  
+  
+  To simplify the 'pm' part of equation 'EXPPRICE_NMRG', we will set
+  
+       (ALL,i,NMRG_COMM) (ALL,r,REG) C00421(i,r)
+  
+   equal to the following expression:
+  
+       -SUM(s,REG,SX_IRS(i,r,s))
+  
+  
+  To simplify the 'tx' part of equation 'EXPPRICE_NMRG', we will set
+  
+       (ALL,i,NMRG_COMM) (ALL,r,REG) C00422(i,r)
+  
+   equal to the following expression:
+  
+       -SUM(s,REG,-SX_IRS(i,r,s))
+  
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 20.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ pms
+  
+  List of equations containing 'pms' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+    164      |  MKTPRICES
+    165      |  DPRICEIMP
+    167      |  IMPORTDEMAND
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ MKTPRICES
+  
+  To simplify the 'tm' part of equation 'DPRICEIMP', we will set
+  
+       (ALL,i,TRAD_COMM) (ALL,s,REG) C00423(i,s)
+  
+   equal to the following expression:
+  
+       -SUM(k,REG,MSHRS(i,k,s))
+  
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 21.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ qtmfsd
+  
+  List of equations containing 'qtmfsd' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+    169      |  QTRANS_MFSD
+    170      |  TRANS_DEMAND
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ QTRANS_MFSD
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 22.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ ptrans
+  
+  List of equations containing 'ptrans' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+    172      |  TRANSCOSTINDEX
+    175      |  FOBCIF
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ TRANSCOSTINDEX
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 23.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ atmfsd
+  
+  List of equations containing 'atmfsd' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+    170      |  TRANS_DEMAND
+    173      |  TRANSTECHANGE
+    175      |  FOBCIF
+    239      |  EV_DECOMPOSITION
+    271      |  CONT_EV_techr
+    277      |  CONT_EV_tech_atrr
+    278      |  CONT_EV_tech_afmfdsd
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ TRANSTECHANGE
+  
+  To simplify the 'atm' part of equation 'TRANS_DEMAND', we will set
+  
+       (ALL,m,MARG_COMM) C00424(m)
+  
+   equal to the following expression:
+  
+       SUM(i,TRAD_COMM,SUM(r,REG,SUM(s,REG,VTMUSESHR(m,i,r,s))))
+  
+  
+  To simplify the 'atf' part of equation 'TRANS_DEMAND', we will set
+  
+       (ALL,m,MARG_COMM) (ALL,i,TRAD_COMM) C00425(m,i)
+  
+   equal to the following expression:
+  
+       SUM(r,REG,SUM(s,REG,VTMUSESHR(m,i,r,s)))
+  
+  
+  To simplify the 'ats' part of equation 'TRANS_DEMAND', we will set
+  
+       (ALL,m,MARG_COMM) (ALL,r,REG) C00426(m,r)
+  
+   equal to the following expression:
+  
+       SUM(i,TRAD_COMM,SUM(s,REG,VTMUSESHR(m,i,r,s)))
+  
+  
+  To simplify the 'atd' part of equation 'TRANS_DEMAND', we will set
+  
+       (ALL,m,MARG_COMM) (ALL,s,REG) C00427(m,s)
+  
+   equal to the following expression:
+  
+       SUM(i,TRAD_COMM,SUM(r,REG,VTMUSESHR(m,i,r,s)))
+  
+  
+  To simplify the 'atf' part of equation 'FOBCIF', we will set
+  
+       (ALL,i,TRAD_COMM) (ALL,r,REG) (ALL,s,REG) C00428(i,r,s)
+  
+   equal to the following expression:
+  
+       SUM(m,MARG_COMM,TRNSHR(i,r,s) * VTFSD_MSH(m,i,r,s))
+  
+  
+  To simplify the 'atm' part of equation 'EV_DECOMPOSITION', we will set
+  
+       (ALL,m,MARG_COMM) (ALL,r,REG) C00429(m,r)
+  
+   equal to the following expression:
+  
+       SUM(i,TRAD_COMM,SUM(s,REG,-0.01   * EVSCALFACT(r) * VTMFSD(m,i,s,r)))
+  
+  
+  To simplify the 'atf' part of equation 'EV_DECOMPOSITION', we will set
+  
+       (ALL,i,TRAD_COMM) (ALL,r,REG) C00430(i,r)
+  
+   equal to the following expression:
+  
+       SUM(m,MARG_COMM,SUM(s,REG,-0.01   * EVSCALFACT(r) * VTMFSD(m,i,s,r)))
+  
+  
+  To simplify the 'ats' part of equation 'EV_DECOMPOSITION', we will set
+  
+       (ALL,s,REG) (ALL,r,REG) C00431(s,r)
+  
+   equal to the following expression:
+  
+       SUM(m,MARG_COMM,SUM(i,TRAD_COMM,-0.01   * EVSCALFACT(r) * VTMFSD(m,i,
+  
+       s,r)))
+  
+  
+  To simplify the 'atd' part of equation 'EV_DECOMPOSITION', we will set
+  
+       (ALL,r,REG) C00432(r)
+  
+   equal to the following expression:
+  
+       SUM(m,MARG_COMM,SUM(i,TRAD_COMM,SUM(s,REG,-0.01   * EVSCALFACT(r) *
+  
+       VTMFSD(m,i,s,r))))
+  
+  
+  To simplify the 'atm' part of equation 'CONT_EV_tech_atrr', we will set
+  
+       (ALL,m,MARG_COMM) (ALL,r,REG) C00433(m,r)
+  
+   equal to the following expression:
+  
+       -0.01   * EVSCALFACT(r) * SUM(i,TRAD_COMM,SUM(s,REG,VTMFSD(m,i,s,r)))
+  
+  
+  To simplify the 'atf' part of equation 'CONT_EV_tech_atrr', we will set
+  
+       (ALL,i,TRAD_COMM) (ALL,r,REG) C00434(i,r)
+  
+   equal to the following expression:
+  
+       -0.01   * EVSCALFACT(r) * SUM(m,MARG_COMM,SUM(s,REG,VTMFSD(m,i,s,r)))
+  
+  
+  To simplify the 'ats' part of equation 'CONT_EV_tech_atrr', we will set
+  
+       (ALL,s,REG) (ALL,r,REG) C00435(s,r)
+  
+   equal to the following expression:
+  
+       -0.01   * EVSCALFACT(r) * SUM(m,MARG_COMM,SUM(i,TRAD_COMM,VTMFSD(m,i,
+  
+       s,r)))
+  
+  
+  To simplify the 'atd' part of equation 'CONT_EV_tech_atrr', we will set
+  
+       (ALL,r,REG) C00436(r)
+  
+   equal to the following expression:
+  
+       -0.01   * EVSCALFACT(r) * SUM(m,MARG_COMM,SUM(i,TRAD_COMM,SUM(s,REG,
+  
+       VTMFSD(m,i,s,r))))
+  
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 24.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ pcif
+  
+  List of equations containing 'pcif' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+    165      |  DPRICEIMP
+    167      |  IMPORTDEMAND
+    168      |  TIMPRATIO
+    175      |  FOBCIF
+    223      |  VGDP_r
+    224      |  PGDP_r
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ FOBCIF
+  
+  To simplify the 'atm' part of equation 'DPRICEIMP', we will set
+  
+       (ALL,m,MARG_COMM) (ALL,i,TRAD_COMM) (ALL,s,REG) C00437(m,i,s)
+  
+   equal to the following expression:
+  
+       SUM(k,REG,MSHRS(i,k,s) * TRNSHR(i,k,s) * VTFSD_MSH(m,i,k,s))
+  
+  
+  To simplify the 'atf' part of equation 'DPRICEIMP', we will set
+  
+       (ALL,i,TRAD_COMM) (ALL,s,REG) C00438(i,s)
+  
+   equal to the following expression:
+  
+       SUM(k,REG,MSHRS(i,k,s) * C00428(i,k,s))
+  
+  
+  To simplify the 'pt' part of equation 'DPRICEIMP', we will set
+  
+       (ALL,m,MARG_COMM) (ALL,i,TRAD_COMM) (ALL,s,REG) C00439(m,i,s)
+  
+   equal to the following expression:
+  
+       SUM(k,REG,-MSHRS(i,k,s) * TRNSHR(i,k,s) * VTFSD_MSH(m,i,k,s))
+  
+  
+  To simplify the 'tm' part of equation 'TIMPRATIO', we will set
+  
+       (ALL,i,TRAD_COMM) (ALL,r,REG) C00440(i,r)
+  
+   equal to the following expression:
+  
+       -SUM(s,REG,VIMS(i,s,r))
+  
+  
+  To simplify the 'atm' part of equation 'TIMPRATIO', we will set
+  
+       (ALL,m,MARG_COMM) (ALL,r,REG) C00441(m,r)
+  
+   equal to the following expression:
+  
+       -SUM(i,TRAD_COMM,SUM(s,REG,-MTAX(i,s,r) * TRNSHR(i,s,r) *
+  
+       VTFSD_MSH(m,i,s,r)))
+  
+  
+  To simplify the 'atf' part of equation 'TIMPRATIO', we will set
+  
+       (ALL,i,TRAD_COMM) (ALL,r,REG) C00442(i,r)
+  
+   equal to the following expression:
+  
+       -SUM(s,REG,-MTAX(i,s,r) * C00428(i,s,r))
+  
+  
+  To simplify the 'ats' part of equation 'TIMPRATIO', we will set
+  
+       (ALL,s,REG) (ALL,r,REG) C00443(s,r)
+  
+   equal to the following expression:
+  
+       -SUM(i,TRAD_COMM,-MTAX(i,s,r) * C00428(i,s,r))
+  
+  
+  To simplify the 'atd' part of equation 'TIMPRATIO', we will set
+  
+       (ALL,r,REG) C00444(r)
+  
+   equal to the following expression:
+  
+       -SUM(i,TRAD_COMM,SUM(s,REG,-MTAX(i,s,r) * C00428(i,s,r)))
+  
+  
+  To simplify the 'pt' part of equation 'TIMPRATIO', we will set
+  
+       (ALL,m,MARG_COMM) (ALL,r,REG) C00445(m,r)
+  
+   equal to the following expression:
+  
+       -SUM(i,TRAD_COMM,SUM(s,REG,MTAX(i,s,r) * TRNSHR(i,s,r) * VTFSD_MSH(m,
+  
+       i,s,r)))
+  
+  
+  To simplify the 'atm' part of equation 'VGDP_r', we will set
+  
+       (ALL,m,MARG_COMM) (ALL,r,REG) C00446(m,r)
+  
+   equal to the following expression:
+  
+       SUM(i,TRAD_COMM,SUM(s,REG,-VIWS(i,s,r) * TRNSHR(i,s,r) * VTFSD_MSH(m,
+  
+       i,s,r)))
+  
+  
+  To simplify the 'atf' part of equation 'VGDP_r', we will set
+  
+       (ALL,i,TRAD_COMM) (ALL,r,REG) C00447(i,r)
+  
+   equal to the following expression:
+  
+       SUM(s,REG,-VIWS(i,s,r) * C00428(i,s,r))
+  
+  
+  To simplify the 'ats' part of equation 'VGDP_r', we will set
+  
+       (ALL,s,REG) (ALL,r,REG) C00448(s,r)
+  
+   equal to the following expression:
+  
+       SUM(i,TRAD_COMM,-VIWS(i,s,r) * C00428(i,s,r))
+  
+  
+  To simplify the 'atd' part of equation 'VGDP_r', we will set
+  
+       (ALL,r,REG) C00449(r)
+  
+   equal to the following expression:
+  
+       SUM(i,TRAD_COMM,SUM(s,REG,-VIWS(i,s,r) * C00428(i,s,r)))
+  
+  
+  To simplify the 'pt' part of equation 'VGDP_r', we will set
+  
+       (ALL,m,MARG_COMM) (ALL,r,REG) C00450(m,r)
+  
+   equal to the following expression:
+  
+       SUM(i,TRAD_COMM,SUM(s,REG,VIWS(i,s,r) * TRNSHR(i,s,r) * VTFSD_MSH(m,
+  
+       i,s,r)))
+  
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 25.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ CNTqor
+  
+  List of equations containing 'CNTqor' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+    243      |  CONT_EV_qor
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ CONT_EV_qor
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 26.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ CNTqoir
+  
+  List of equations containing 'CNTqoir' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+    244      |  CONT_EV_qoir
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ CONT_EV_qoir
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 27.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ CNTqfer
+  
+  List of equations containing 'CNTqfer' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+    245      |  CONT_EV_qfer
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ CONT_EV_qfer
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 28.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ CNTqfeir
+  
+  List of equations containing 'CNTqfeir' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+    246      |  CONT_EV_qfeir
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ CONT_EV_qfeir
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 29.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ CNTqfeijr
+  
+  List of equations containing 'CNTqfeijr' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+    247      |  CONT_EV_qfeijr
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ CONT_EV_qfeijr
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 30.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ CNTqfmr
+  
+  List of equations containing 'CNTqfmr' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+    248      |  CONT_EV_qfmr
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ CONT_EV_qfmr
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 31.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ CNTqfmir
+  
+  List of equations containing 'CNTqfmir' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+    249      |  CONT_EV_qfmir
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ CONT_EV_qfmir
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 32.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ CNTqfmijr
+  
+  List of equations containing 'CNTqfmijr' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+    250      |  CONT_EV_qfmijr
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ CONT_EV_qfmijr
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 33.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ CNTqfdr
+  
+  List of equations containing 'CNTqfdr' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+    251      |  CONT_EV_qfdr
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ CONT_EV_qfdr
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 34.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ CNTqfdir
+  
+  List of equations containing 'CNTqfdir' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+    252      |  CONT_EV_qfdir
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ CONT_EV_qfdir
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 35.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ CNTqfdijr
+  
+  List of equations containing 'CNTqfdijr' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+    253      |  CONT_EV_qfdijr
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ CONT_EV_qfdijr
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 36.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ CNTqpmr
+  
+  List of equations containing 'CNTqpmr' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+    254      |  CONT_EV_qpmr
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ CONT_EV_qpmr
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 37.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ CNTqpmir
+  
+  List of equations containing 'CNTqpmir' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+    255      |  CONT_EV_qpmir
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ CONT_EV_qpmir
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 38.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ CNTqpdr
+  
+  List of equations containing 'CNTqpdr' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+    256      |  CONT_EV_qpdr
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ CONT_EV_qpdr
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 39.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ CNTqpdir
+  
+  List of equations containing 'CNTqpdir' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+    257      |  CONT_EV_qpdir
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ CONT_EV_qpdir
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 40.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ CNTqgmr
+  
+  List of equations containing 'CNTqgmr' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+    258      |  CONT_EV_qgmr
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ CONT_EV_qgmr
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 41.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ CNTqgmir
+  
+  List of equations containing 'CNTqgmir' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+    259      |  CONT_EV_qgmir
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ CONT_EV_qgmir
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 42.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ CNTqgdr
+  
+  List of equations containing 'CNTqgdr' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+    260      |  CONT_EV_qgdr
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ CONT_EV_qgdr
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 43.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ CNTqgdir
+  
+  List of equations containing 'CNTqgdir' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+    261      |  CONT_EV_qgdir
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ CONT_EV_qgdir
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 44.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ CNTqxsr
+  
+  List of equations containing 'CNTqxsr' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+    262      |  CONT_EV_qxsr
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ CONT_EV_qxsr
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 45.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ CNTqxsirs
+  
+  List of equations containing 'CNTqxsirs' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+    263      |  CONT_EV_qxsirs
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ CONT_EV_qxsirs
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 46.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ CNTqimr
+  
+  List of equations containing 'CNTqimr' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+    264      |  CONT_EV_qimr
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ CONT_EV_qimr
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 47.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ CNTqimisr
+  
+  List of equations containing 'CNTqimisr' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+    265      |  CONT_EV_qimisr
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ CONT_EV_qimisr
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 48.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ CNTalleffr
+  
+  List of equations containing 'CNTalleffr' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+    266      |  CONT_EV_alleffr
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ CONT_EV_alleffr
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 49.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ !b
+  
+  
+ !CNTtotr
+  
+  
+ !CONT_EV_totr
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ CNTtech_aoir1
+  
+  List of equations containing 'CNTtech_aoir1' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+    273      |  CONT_EV_tech_aoir1
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ CONT_EV_tech_aoir1
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 50.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ CNTtech_aoir2
+  
+  List of equations containing 'CNTtech_aoir2' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+    274      |  CONT_EV_tech_aoir2
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ CONT_EV_tech_aoir2
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 51.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ CNTtech_afijr
+  
+  List of equations containing 'CNTtech_afijr' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+    276      |  CONT_EV_tech_afijr
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ CONT_EV_tech_afijr
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 52.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ CNTtech_afmfdsd
+  
+  List of equations containing 'CNTtech_afmfdsd' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+    278      |  CONT_EV_tech_afmfdsd
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ CONT_EV_tech_afmfdsd
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 53.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ CNTtech_amsirs
+  
+  List of equations containing 'CNTtech_amsirs' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+    280      |  CONT_EV_tech_amsirs
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ CONT_EV_tech_amsirs
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 54.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ harvstaez
+  
+  List of equations containing 'harvstaez' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+    299      |  E_HARVSTAEZ
+    307      |  E_RENTCROPAV
+    309      |  FIXAREA
+    310      |  CROPCOVER1
+    311      |  CROPCOVER2
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ E_HARVSTAEZ
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 55.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ !b
+  
+  
+ !lcoveraez
+  
+  
+ !E_AREAADJUST
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ lcovercom
+  
+  List of equations containing 'lcovercom' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+    303      |  COMCOVER
+    304      |  GLCOMCOVER
+    305      |  NUSCOMCOVER
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ COMCOVER
+  
+  To simplify the 'p_LANDCOVER_L' part of equation 'GLCOMCOVER', we will set
+  
+       (ALL,m,AEZ_COMM) (ALL,j,LCOVER_INDS) (ALL,r,REG) C00451(m,j,r)
+  
+   equal to the following expression:
+  
+       -SUM(i,AEZ_COMM,LANDCOVER_L(i,j,r)) / SUM(k,REG,SUM(i,AEZ_COMM,
+  
+       LANDCOVER_L(i,j,k))) * COMLCOVERSHR(m,j,r)
+  
+  
+  To simplify the 'p_LANDCOVER_L' part of equation 'NUSCOMCOVER', we will set
+  
+       (ALL,m,AEZ_COMM) (ALL,j,LCOVER_INDS) (ALL,r,NUS_REG) C00452(m,j,r)
+  
+   equal to the following expression:
+  
+       -SUM(i,AEZ_COMM,LANDCOVER_L(i,j,r)) / SUM(k,NUS_REG,SUM(i,AEZ_COMM,
+  
+       LANDCOVER_L(i,j,k))) * COMLCOVERSHR(m,j,r)
+  
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 56.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ globharvstcom
+  
+  List of equations containing 'globharvstcom' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+    313      |  GLCOMHARVEST
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ GLCOMHARVEST
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 57.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ !b
+  
+  
+ !nusharvstcom
+  
+  
+ !NUSCOMHARVEST
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ globlcovercom
+  
+  List of equations containing 'globlcovercom' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+    304      |  GLCOMCOVER
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ GLCOMCOVER
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 58.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ nuslcovercom
+  
+  List of equations containing 'nuslcovercom' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+    305      |  NUSCOMCOVER
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ NUSCOMCOVER
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 59.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ hareaslackreg
+  
+  List of equations containing 'hareaslackreg' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+    314      |  HARVCOVERSLACK
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ HARVCOVERSLACK
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 60.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ xlcoveraez
+  
+  List of equations containing 'xlcoveraez' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+    315      |  E_XLCOVERAEZ
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ E_XLCOVERAEZ
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 61.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ !b
+  
+  
+ !biooiluse
+  
+  
+ !E_BIOUSE
+  
+  
+ !b
+  
+  
+ !p_BIOOIL
+  
+  
+ !E_BIOOIL
+  
+  
+ !b
+  
+  
+ !biofueluse
+  
+  
+ !E_BIOFUELUSE
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ globalouput
+  
+  List of equations containing 'globalouput' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+    319      |  E_GLOBALOUTPUT
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ E_GLOBALOUTPUT
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 62.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ globalcons
+  
+  List of equations containing 'globalcons' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+    320      |  E_GLOBALCONS
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ E_GLOBALCONS
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 63.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ cnt_yield
+  
+  List of equations containing 'cnt_yield' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+    321      |  E_CNT_YIELD
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ E_CNT_YIELD
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 64.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ cnt_yieldint
+  
+  List of equations containing 'cnt_yieldint' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+    322      |  E_CNT_YIELDI
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ E_CNT_YIELDI
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 65.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ cnt_yieldext
+  
+  List of equations containing 'cnt_yieldext' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+    323      |  E_CNT_YIELDE
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ E_CNT_YIELDE
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 66.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ cnt_area
+  
+  List of equations containing 'cnt_area' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+    324      |  E_CNT_AREA
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ E_CNT_AREA
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 67.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ regouput
+  
+  List of equations containing 'regouput' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+    325      |  E_REGOUTPUT
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ E_REGOUTPUT
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 68.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ cnt_yieldreg
+  
+  List of equations containing 'cnt_yieldreg' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+    326      |  E_CNT_YIELDREG
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ E_CNT_YIELDREG
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 69.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ cnt_yieldintreg
+  
+  List of equations containing 'cnt_yieldintreg' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+    327      |  E_CNT_YIELDIREG
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ E_CNT_YIELDIREG
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 70.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ cnt_yieldextreg
+  
+  List of equations containing 'cnt_yieldextreg' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+    328      |  E_CNT_YIELDEREG
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ E_CNT_YIELDEREG
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 71.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ cnt_areareg
+  
+  List of equations containing 'cnt_areareg' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+    329      |  E_CNT_AREAREG
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ E_CNT_AREAREG
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 72.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ !b
+  
+  
+ !rowoutput
+  
+  
+ !E_ROWOUTPUT
+  
+  
+ !b
+  
+  
+ !cnt_yieldrow
+  
+  
+ !E_CNT_YIELDROW
+  
+  
+ !b
+  
+  
+ !cnt_yieldintrow
+  
+  
+ !E_CNT_YIELDIROW
+  
+  
+ !b
+  
+  
+ !cnt_yieldextrow
+  
+  
+ !E_CNT_YIELDEROW
+  
+  
+ !b
+  
+  
+ !cnt_arearow
+  
+  
+ !E_CNT_AREAROW
+  
+  
+ b
+  
+  Enter the name of the variable to substitute out:
+  (Case does not matter. Levels names are allowed.)
+  
+  
+  
+ INCREMENT
+  
+  List of equations containing 'INCREMENT' :
+  
+  Equation   |  Equation
+   number    |    name
+ ------------|-------------------------
+             |
+      0      | Abort this Substitution
+             |
+    330      |  E_INCREMENT
+  
+  Enter the NUMBER or NAME of the required equation :
+  
+  
+ E_INCREMENT
+  
+  This substitution was SUCCESSFUL
+   and constitutes CONDENSATION ACTION number 73.
+  
+  Do you want to SUBSTITUTE a variable             [s], or
+      substitute a variable and BACKSOLVE for it   [b], or
+                 OMIT one or more variables        [o], or
+                 DISPLAY the model's status        [d], or
+                 EXIT from CONDENSATION            [e] :
+  
+  
+ e           ! Exit condensation.
+  
+  --> Summary of CONDENSATION
+  
+  There are 260 equations left in the CONDENSED model.
+  0 equations have been used to SUBSTITUTE out variables.
+  72 equations have been used to BACKSOLVE for variables.
+  The entire model contains 332 equations.
+  
+  There are 210 variables left in the CONDENSED model.
+  0 variables have been SUBSTITUTED out.
+  1 variables have been OMITTED.
+  You can BACKSOLVE for 72 variables.
+  The entire model contains 283 variables.
+  
+  Do you want to see a summary of the model        [s], or
+                 perform AUTOMATIC CODE GENERATION [a], or
+                 exit from TABLO                   [e] :
+   (Enter a carriage return to proceed directly
+    to AUTOMATIC CODE GENERATION )
+  
+  
+ a           ! Proceed to automatic code generation.
+  
+ --> Starting CODE GENERATION
+  
+  
+                          TABLO PORTABLE
+                CODE OPTIONS   ( --> indicates those in effect )
+  
+       NEQ Do no equations           PGS Prepare output for GEMSIM
+       NDS Do no displays        --> WFP Write a Fortran Program
+       NWR Do no writes                    (i.e. a TABLO-generated program)
+                                 --> FC5 Fast Compile TG-prog under LF95
+       ACC All comment lines in      NMS Don't allow simulations
+              code
+                                     CIN Code file name same as
+                                           Information file name
+                                     CDM Old option. Has no effect.
+                                     NRZ No run-time reports re use of
+                                            ZERODIVIDE default values
+                                     NXS No "extra" statements allowed
+  
+   Select an option   :  <opt>      Deselect an option      : -<opt>
+   Help for an option : ?<opt>      Help on all options     : ??
+   Redisplay options  : /           Finish option selection : Carriage return
+  Your selection >
+  
+  
+ wfp         ! Write a Fortran program.
+ Writing a Fortran (i.e. TABLO-generated) program
+  Your selection >
+  
+  
+  
+  
+  PROGRAM FOR THIS MODEL
+  ----------------------
+  
+  Input the full name (excluding suffix) of this file.
+   (The suffix '.for' will be appended automatically to your input.)
+    Enter a CARRIAGE-RETURN to use the name    'gtap'.
+  
+  
+ gtap        ! name of Fortran program file
+ (Opened new print file 'gtap.for'.)
+  
+   (Existing file 'gtap.axt' has been deleted.)
+ (Opened new binary file 'gtap.axt'.)
+ (Opened new print file 'gtap.f9m'.)
+ (Opened new print file 'gtap_c11.for'.)
+ (Opened new print file 'gtap_c31.for'.)
+ (Opened new print file 'gtap_c51.for'.)
+ (Opened new print file 'gtap_c61.for'.)
+ (Opened new print file 'gtap_c12.for'.)
+ (Opened new print file 'gtap_c32.for'.)
+ (Opened new print file 'gtap_c52.for'.)
+ (Opened new print file 'gtap_c62.for'.)
+ (Opened new print file 'gtap_c1.for'.)
+ (Opened new print file 'gtap_c3.for'.)
+ (Opened new print file 'gtap_c5.for'.)
+ (Opened new print file 'gtap_c6.for'.)
+ (Opened new print file 'gtap_c0.for'.)
+ (Opened new print file 'gtap_u11.for'.)
+ (Opened new print file 'gtap_u21.for'.)
+ (Opened new print file 'gtap_u31.for'.)
+ (Opened new print file 'gtap_u41.for'.)
+ (Opened new print file 'gtap_u12.for'.)
+ (Opened new print file 'gtap_u22.for'.)
+ (Opened new print file 'gtap_u32.for'.)
+ (Opened new print file 'gtap_u42.for'.)
+ (Opened new print file 'gtap_u1.for'.)
+ (Opened new print file 'gtap_u2.for'.)
+ (Opened new print file 'gtap_u3.for'.)
+ (Opened new print file 'gtap_u4.for'.)
+ (Opened new print file 'gtap_u0.for'.)
+ (Opened new print file 'gtap_v1.for'.)
+ (Opened new print file 'gtap_v3.for'.)
+ (Opened new print file 'gtap_v4.for'.)
+ (Opened new print file 'gtap_v5.for'.)
+ (Opened new print file 'gtap_v0.for'.)
+ (Opened new print file 'gtap_m0.for'.)
+  
+   (Existing file 'gtap.axs' has been deleted.)
+ (Opened new binary file 'gtap.axs'.)
+  
+  (Beginning code for reads, formulas, writes, displays etc.)
+  
+  (Beginning code for the equations.)
+  
+  (Beginning code for the backsolves.)
+  
+  (Beginning code for the updates.)
+  
+  (Organising the code files.)
+  (Total number of lines of code is 192446.)
+ (Opened new text file 'gtap.min'.)
+ (Model Information file is 'gtap.min'.)
+  
+  (Total number of programs written is 1.)
+  
+  *******************************************************************
+  Successful completion of TABLO.
+  The program is
+    'gtap.for'.
+  
+  This program
+      o can create the Equations file (for the condensed system)
+      o can check 2 ASSERTIONs
+      o can carry out multi-step simulations
+  
+  *******************************************************************
+ (Information file is 'gtap.inf'.)
+  
+  (The program has completed without error.)
+  (There were         9 warnings.)
+  (If you have a LOG file, search for '%%W' to see them.)
+  (Alternatively, search the Information file for '%%W'.)
+  (The last was:
+   'Statement appears redundant')
+  Total elapsed time is:  9 seconds.
+  
+ (Output has also been written to log file 'gpxx2.log'.)

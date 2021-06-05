@@ -1,0 +1,55 @@
+LTG command line: C:\GP\ltg.bat GTAP
+
+[C:\GP\gptask.exe]
+[GPTASK 22 June 2010. Parameters: gfortran GTAP ]
+
+GNU Fortran (rev3, Built by MinGW-builds project) 4.8.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+
+GNU Fortran comes with NO WARRANTY, to the extent permitted by law.
+You may redistribute copies of GNU Fortran
+under the terms of the GNU General Public License.
+For more information about these matters, see the file named COPYING
+
+Running up to 8 compiles at once, with each compile doing up to 3 files.
+Launched slot 1: gfortran -I "C:\GP\includes" -I "C:\GP\modules" @optin_1 "gtap_c11.for" "gtap_c12.for" "gtap_u11.for"
+Launched slot 2: gfortran -I "C:\GP\includes" -I "C:\GP\modules" @optin_1 "gtap_u12.for" "gtap_v1.for" "gtap__17.for"
+Launched slot 3: gfortran -I "C:\GP\includes" -I "C:\GP\modules" @optin_1 "gtap__21.for" "gtap__44.for" "gtap__45.for"
+Launched slot 4: gfortran -I "C:\GP\includes" -I "C:\GP\modules" @optin_1 "gtap__46.for"
+Launched slot 1: gfortran -I "C:\GP\includes" -I "C:\GP\modules" @optin_1 "gtap_c1.for" "gtap_c31.for" "gtap_c32.for"
+Launched slot 4: gfortran -I "C:\GP\includes" -I "C:\GP\modules" @optin_1 "gtap_c51.for" "gtap_c52.for" "gtap_c61.for"
+Launched slot 5: gfortran -I "C:\GP\includes" -I "C:\GP\modules" @optin_1 "gtap_c62.for" "gtap_u21.for" "gtap_u31.for"
+Launched slot 6: gfortran -I "C:\GP\includes" -I "C:\GP\modules" @optin_1 "gtap_u41.for"
+Launched slot 1: gfortran -I "C:\GP\includes" -I "C:\GP\modules" @optin_1 "gtap_c3.for"
+Launched slot 1: gfortran -I "C:\GP\includes" -I "C:\GP\modules" @optin_1 "gtap__41.for"
+Launched slot 1: gfortran -I "C:\GP\includes" -I "C:\GP\modules" @optin_1 "gtap_u1.for" "gtap_u22.for" "gtap_u32.for"
+Launched slot 2: gfortran -I "C:\GP\includes" -I "C:\GP\modules" @optin_1 "gtap_u42.for" "gtap_v3.for" "gtap_v4.for"
+Launched slot 3: gfortran -I "C:\GP\includes" -I "C:\GP\modules" @optin_1 "gtap_v5.for" "gtap__36.for"
+Launched slot 1: gfortran -I "C:\GP\includes" -I "C:\GP\modules" @optin_1 "gtap_u2.for" "gtap_u3.for" "gtap__37.for"
+Launched slot 5: gfortran -I "C:\GP\includes" -I "C:\GP\modules" @optin_1 "gtap__38.for"
+Launched slot 2: gfortran -I "C:\GP\includes" -I "C:\GP\modules" @optin_1 "gtap_u4.for"
+Launched slot 1: gfortran -I "C:\GP\includes" -I "C:\GP\modules" @optin_1 "gtap_u0.for" "gtap_v0.for" "gtap__39.for"
+Launched slot 2: gfortran -I "C:\GP\includes" -I "C:\GP\modules" @optin_1 "gtap__40.for" "gtap__42.for" "gtap__43.for"
+Launched slot 3: gfortran -I "C:\GP\includes" -I "C:\GP\modules" @optin_1 "gtap_c5.for" "gtap_c6.for"
+Launched slot 1: gfortran -I "C:\GP\includes" -I "C:\GP\modules" @optin_1 "gtap_c0.for" "gtap__2.for" "gtap__3.for"
+Launched slot 3: gfortran -I "C:\GP\includes" -I "C:\GP\modules" @optin_1 "gtap__4.for" "gtap__5.for" "gtap__6.for"
+Launched slot 4: gfortran -I "C:\GP\includes" -I "C:\GP\modules" @optin_1 "gtap__7.for" "gtap__8.for" "gtap__9.for"
+Launched slot 5: gfortran -I "C:\GP\includes" -I "C:\GP\modules" @optin_1 "gtap__10.for" "gtap__11.for" "gtap__12.for"
+Launched slot 6: gfortran -I "C:\GP\includes" -I "C:\GP\modules" @optin_1 "gtap__13.for" "gtap__14.for" "gtap__15.for"
+Launched slot 7: gfortran -I "C:\GP\includes" -I "C:\GP\modules" @optin_1 "gtap__16.for" "gtap__18.for" "gtap__19.for"
+Launched slot 8: gfortran -I "C:\GP\includes" -I "C:\GP\modules" @optin_1 "gtap__20.for" "gtap__22.for" "gtap__23.for"
+Launched slot 2: gfortran -I "C:\GP\includes" -I "C:\GP\modules" @optin_1 "gtap__24.for" "gtap__25.for" "gtap__26.for"
+Launched slot 1: gfortran -I "C:\GP\includes" -I "C:\GP\modules" @optin_1 "gtap_m0.for" "gtap__27.for" "gtap__28.for"
+Launched slot 6: gfortran -I "C:\GP\includes" -I "C:\GP\modules" @optin_1 "gtap__29.for" "gtap__30.for" "gtap__31.for"
+Launched slot 5: gfortran -I "C:\GP\includes" -I "C:\GP\modules" @optin_1 "gtap__32.for" "gtap__33.for" "gtap__34.for"
+Launched slot 7: gfortran -I "C:\GP\includes" -I "C:\GP\modules" @optin_1 "gtap__35.for"
+Launched slot 1: gfortran -I "C:\GP\includes" -I "C:\GP\modules" @optin_1 "gtap__1.for"
+Finished OK 35.5 seconds 32 separate tasks
+[C:\GP\gptask.exe]
+[GPTASK 22 June 2010. Parameters: cleangf GTAP deletefor]
+start time = 09:25:33.35       end time = 09:26:12.00             
+
+
+GTAP.EXE made successfully
+
+
