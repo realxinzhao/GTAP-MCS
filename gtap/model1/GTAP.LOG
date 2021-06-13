@@ -23,7 +23,7 @@
      << COPYRIGHT 1987-2016: CoPS/Impact and KPSOFT >>
   
   Current directory is:
- C:\Users\XZhaoPC\Desktop\2021Followuppaper\GTAP-MCS\gtap\model1
+ C:\Users\XZhaoPC\Desktop\2021Followuppaper\GTAP-MCS\gtap\model_ydel
   
   
   Full path name of running EXE is: C:\GP\tablo.exe
@@ -73,11 +73,11 @@
   Input the full name (INCLUDING suffix) of this file.
   
   
- C:\Users\XZhaoPC\Desktop\2021Followuppaper\GTAP-MCS\gtap\model1\TABmate.rpt
+ C:\Users\XZhaoPC\Desktop\2021Followuppaper\GTAP-MCS\gtap\model_ydel\TABmate.rpt
  (Opened new text file
   
-  'C:\Users\XZhaoPC\Desktop\2021Followuppaper\GTAP-MCS\gtap\model1\TABmate.rpt'.
- )
+  'C:\Users\XZhaoPC\Desktop\2021Followuppaper\GTAP-MCS\gtap\model_ydel\TABmate.r
+ pt'.)
  Licence file: C:\GP\licen.gem
   
  Writing a report file
@@ -96,9 +96,11 @@
   Input the full name (INCLUDING suffix) of this file.
   
   
- C:\Users\XZhaoPC\Desktop\2021Followuppaper\GTAP-MCS\gtap\model1\GTAP.STI
+ C:\Users\XZhaoPC\Desktop\2021Followuppaper\GTAP-MCS\gtap\model_ydel\GTAP.STI
  (Opened, as text, existing file
-   'C:\Users\XZhaoPC\Desktop\2021Followuppaper\GTAP-MCS\gtap\model1\GTAP.STI'.)
+  
+  'C:\Users\XZhaoPC\Desktop\2021Followuppaper\GTAP-MCS\gtap\model_ydel\GTAP.STI'
+ .)
  Taking inputs from a Stored-input file
  Your selection >
   
@@ -151,9 +153,9 @@
  --> Starting CHECK stage
   (Beginning preliminary pass of your TABLO Input file.)
   
-  NUMIG = 6500, NUMZD = 62.
+  NUMIG = 6501, NUMZD = 62.
   NUMST = 103, NUMSS = 150.
-  NUMFL = 4, NUMDS = 0.
+  NUMFL = 5, NUMDS = 0.
   NUMRD = 1425, NUMWR = 0.
   NUMCS = 1319, NUMVC = 616.
   TCSIND = 5210, TVCIND = 5111.
@@ -163,6 +165,7 @@
   NUMCP = 0, NUMMF = 0.
   (Beginning the check of your TABLO Input file.)
   (After 50 statements, total number of errors is 0.)
+  (After 100 statements, total number of errors is 0.)
   (After 150 statements, total number of errors is 0.)
   (After 200 statements, total number of errors is 0.)
   (After 250 statements, total number of errors is 0.)
@@ -183,12 +186,13 @@
   (After 1150 statements, total number of errors is 0.)
   (After 1200 statements, total number of errors is 0.)
   (After 1250 statements, total number of errors is 0.)
+  (After 1300 statements, total number of errors is 0.)
  Declaration of 'FOREST_INDS' as a SUBSET of 'LCOVER_INDS'.
  %% Information only.
      This subset relation is a consequence of earlier subset declarations.
-  (After 1300 statements, total number of errors is 0.)
   (After 1350 statements, total number of errors is 0.)
   (After 1400 statements, total number of errors is 0.)
+  (After 1450 statements, total number of errors is 0.)
   (After 1500 statements, total number of errors is 0.)
   (After 1550 statements, total number of errors is 0.)
   (After 1600 statements, total number of errors is 0.)
@@ -200,11 +204,11 @@
      This subset relation is a consequence of earlier subset declarations.
   (After 1800 statements, total number of errors is 0.)
   
-  (After 1832 statements, total number of errors is 0.)
+  (After 1833 statements, total number of errors is 0.)
   
-  NUMIG = 1842, NUMZD = 62.
+  NUMIG = 1843, NUMZD = 62.
   NUMST = 144, NUMSS = 171.
-  NUMFL = 4, NUMDS = 0.
+  NUMFL = 5, NUMDS = 0.
   NUMRD = 121, NUMWR = 0.
   NUMCS = 324, NUMVC = 283.
   TCSIND = 5210, TVCIND = 5111.
@@ -219,15 +223,11 @@
  MESSAGE(S) ABOUT COEFFICIENT INITIALIZATION
  -------------------------------------------
   
-  FORMULA for 'PMSHR' starting at line 1703.
+  FORMULA for 'PMSHR' starting at line 1705.
   %%WARNING.    Only some values have been assigned to
      coefficient 'VPA' which occurs in this formula.
   
-  FORMULA for 'VPA' starting at line 1756.
-  %%WARNING.    Only some values have been assigned to
-     coefficient 'VPAS' which occurs in this formula.
-  
-  FORMULA for 'CSHHBIOIL' starting at line 1767.
+  FORMULA for 'VPA' starting at line 1758.
   %%WARNING.    Only some values have been assigned to
      coefficient 'VPAS' which occurs in this formula.
   
@@ -235,15 +235,19 @@
   %%WARNING.    Only some values have been assigned to
      coefficient 'VPAS' which occurs in this formula.
   
-  FORMULA for 'VFAS' starting at line 2505.
+  FORMULA for 'CSHHBIOIL' starting at line 1771.
+  %%WARNING.    Only some values have been assigned to
+     coefficient 'VPAS' which occurs in this formula.
+  
+  FORMULA for 'VFAS' starting at line 2507.
   %%WARNING.    Only some values have been assigned to
      coefficient 'VFA' which occurs in this formula.
   
-  FORMULA for 'VFA' starting at line 2507.
+  FORMULA for 'VFA' starting at line 2509.
   %%WARNING.    Only some values have been assigned to
      coefficient 'VFAS' which occurs in this formula.
   
-  FORMULA for 'CSHCDDGC' starting at line 2513.
+  FORMULA for 'CSHCDDGC' starting at line 2515.
   %%WARNING.    Only some values have been assigned to
      coefficient 'VFAS' which occurs in this formula.
   
@@ -251,7 +255,7 @@
  MESSAGE(S) ABOUT APPARENTLY REDUNDANT STATEMENTS
  ------------------------------------------------
   
-  FORMULA for 'SIZE_VOL' starting at line 3364.
+  FORMULA for 'SIZE_VOL' starting at line 3366.
   
   %%WARNING.    This formula appears to be redundant because
      the coefficient 'SIZE_VOL' affected by it occurs in no equation
@@ -259,7 +263,7 @@
      subsequent formula, nor in any subsequent DISPLAY,
      ZERODIVIDE, WRITE or SET statement.
   
-  FORMULA for 'YIELDREG' starting at line 7460.
+  FORMULA for 'YIELDREG' starting at line 7462.
   
   %%WARNING.    This formula appears to be redundant because
      the coefficient 'YIELDREG' affected by it occurs in no equation
@@ -320,7 +324,7 @@
  INPUT CHECK SUMMARY
  -------------------
   
-  Total number of statements is 1842.
+  Total number of statements is 1843.
   There are NO syntax errors or semantic problems.
   
   Do you want to see a SUMMARY of the model        [s], or
@@ -4532,6 +4536,8 @@
   
   (Organising the code files.)
   (Total number of lines of code is 192446.)
+  
+   (Existing file 'gtap.min' has been deleted.)
  (Opened new text file 'gtap.min'.)
  (Model Information file is 'gtap.min'.)
   
@@ -4556,6 +4562,6 @@
   (Alternatively, search the Information file for '%%W'.)
   (The last was:
    'Statement appears redundant')
-  Total elapsed time is:  9 seconds.
+  Total elapsed time is: 10 seconds.
   
- (Output has also been written to log file 'gpxx2.log'.)
+ (Output has also been written to log file 'gpxx3.log'.)

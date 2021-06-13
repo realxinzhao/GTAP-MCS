@@ -245,6 +245,8 @@ File
     GTAPPARM # file containing behavioral parameters #;
 File
     GTAPPARL # file containing land supply behavioral parameters #;
+File
+    GTAPPARY # file containing yield elasticity parameters #;
 
 !<
     ----
@@ -3457,7 +3459,7 @@ Read YDREGSCALE from file GTAPPARM header "YDRS";
 
 Coefficient (parameter) (all,j,ALL_INDS)(all,r,REG)
     YDE_Target(j,r) #Scalar yield elasticity target, read from PARM for SSA#;
-Read YDE_Target from file GTAPPARM header "YDEL";
+Read YDE_Target from file GTAPPARY header "YDEL";
 
 
 Coefficient (parameter) (all,j,ALL_INDS)(all,r,REG)

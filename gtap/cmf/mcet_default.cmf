@@ -20,6 +20,7 @@ Updated file gtapDATA = ../outDB/default.upd;
 Solution file = default;
 file gtapPARM = default3.prm;
 file gtapPARL = ../parameter/par_default.prm;
+file gtapPARY = ../parameter/par_default.prm;
 Verbal Description =
 Shock US  1.06 ATJ corn;
 !Method = Johansen;

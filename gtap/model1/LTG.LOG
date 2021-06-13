@@ -28,26 +28,27 @@ Launched slot 3: gfortran -I "C:\GP\includes" -I "C:\GP\modules" @optin_1 "gtap_
 Launched slot 1: gfortran -I "C:\GP\includes" -I "C:\GP\modules" @optin_1 "gtap_u2.for" "gtap_u3.for" "gtap__37.for"
 Launched slot 5: gfortran -I "C:\GP\includes" -I "C:\GP\modules" @optin_1 "gtap__38.for"
 Launched slot 2: gfortran -I "C:\GP\includes" -I "C:\GP\modules" @optin_1 "gtap_u4.for"
-Launched slot 1: gfortran -I "C:\GP\includes" -I "C:\GP\modules" @optin_1 "gtap_u0.for" "gtap_v0.for" "gtap__39.for"
-Launched slot 2: gfortran -I "C:\GP\includes" -I "C:\GP\modules" @optin_1 "gtap__40.for" "gtap__42.for" "gtap__43.for"
-Launched slot 3: gfortran -I "C:\GP\includes" -I "C:\GP\modules" @optin_1 "gtap_c5.for" "gtap_c6.for"
-Launched slot 1: gfortran -I "C:\GP\includes" -I "C:\GP\modules" @optin_1 "gtap_c0.for" "gtap__2.for" "gtap__3.for"
+Launched slot 1: gfortran -I "C:\GP\includes" -I "C:\GP\modules" @optin_1 "gtap_u0.for"
+Launched slot 1: gfortran -I "C:\GP\includes" -I "C:\GP\modules" @optin_1 "gtap_v0.for" "gtap__39.for" "gtap__40.for"
+Launched slot 2: gfortran -I "C:\GP\includes" -I "C:\GP\modules" @optin_1 "gtap__42.for" "gtap__43.for"
+Launched slot 2: gfortran -I "C:\GP\includes" -I "C:\GP\modules" @optin_1 "gtap_c5.for" "gtap_c6.for"
+Launched slot 2: gfortran -I "C:\GP\includes" -I "C:\GP\modules" @optin_1 "gtap_c0.for" "gtap__2.for" "gtap__3.for"
 Launched slot 3: gfortran -I "C:\GP\includes" -I "C:\GP\modules" @optin_1 "gtap__4.for" "gtap__5.for" "gtap__6.for"
 Launched slot 4: gfortran -I "C:\GP\includes" -I "C:\GP\modules" @optin_1 "gtap__7.for" "gtap__8.for" "gtap__9.for"
 Launched slot 5: gfortran -I "C:\GP\includes" -I "C:\GP\modules" @optin_1 "gtap__10.for" "gtap__11.for" "gtap__12.for"
 Launched slot 6: gfortran -I "C:\GP\includes" -I "C:\GP\modules" @optin_1 "gtap__13.for" "gtap__14.for" "gtap__15.for"
 Launched slot 7: gfortran -I "C:\GP\includes" -I "C:\GP\modules" @optin_1 "gtap__16.for" "gtap__18.for" "gtap__19.for"
 Launched slot 8: gfortran -I "C:\GP\includes" -I "C:\GP\modules" @optin_1 "gtap__20.for" "gtap__22.for" "gtap__23.for"
-Launched slot 2: gfortran -I "C:\GP\includes" -I "C:\GP\modules" @optin_1 "gtap__24.for" "gtap__25.for" "gtap__26.for"
-Launched slot 1: gfortran -I "C:\GP\includes" -I "C:\GP\modules" @optin_1 "gtap_m0.for" "gtap__27.for" "gtap__28.for"
+Launched slot 1: gfortran -I "C:\GP\includes" -I "C:\GP\modules" @optin_1 "gtap__24.for" "gtap__25.for" "gtap__26.for"
+Launched slot 2: gfortran -I "C:\GP\includes" -I "C:\GP\modules" @optin_1 "gtap_m0.for" "gtap__27.for" "gtap__28.for"
 Launched slot 6: gfortran -I "C:\GP\includes" -I "C:\GP\modules" @optin_1 "gtap__29.for" "gtap__30.for" "gtap__31.for"
-Launched slot 5: gfortran -I "C:\GP\includes" -I "C:\GP\modules" @optin_1 "gtap__32.for" "gtap__33.for" "gtap__34.for"
-Launched slot 7: gfortran -I "C:\GP\includes" -I "C:\GP\modules" @optin_1 "gtap__35.for"
+Launched slot 8: gfortran -I "C:\GP\includes" -I "C:\GP\modules" @optin_1 "gtap__32.for" "gtap__33.for" "gtap__34.for"
+Launched slot 1: gfortran -I "C:\GP\includes" -I "C:\GP\modules" @optin_1 "gtap__35.for"
 Launched slot 1: gfortran -I "C:\GP\includes" -I "C:\GP\modules" @optin_1 "gtap__1.for"
-Finished OK 35.5 seconds 32 separate tasks
+Finished OK 35.7 seconds 33 separate tasks
 [C:\GP\gptask.exe]
 [GPTASK 22 June 2010. Parameters: cleangf GTAP deletefor]
-start time = 09:25:33.35       end time = 09:26:12.00             
+start time = 14:01:07.28       end time = 14:01:45.84             
 
 
 GTAP.EXE made successfully
