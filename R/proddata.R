@@ -49,37 +49,7 @@ SCEN_MCET <- "7USGRNA"
 ################################################
 #read data from output database
 
-Proc_outdata <- function(SCEN_MCET){
-  assertthat::assert_that(is.character(SCEN_MCET))
-  
-  lapply(SCEN_MCET, function(scen){
-  
-    DBnm <- paste0("gtap/outDB/", scen, ".upd")
-    data = read_har(DBnm) 
-    data %>% 
-      purrr::pluck("AREA") %>% 
-      as.data.frame() %>% 
-      gather(area, value) %>% group_by(area) %>%  summarize(value = sum(value)) %>% 
-      separate(col = area, into = c("crop", "region"), sep = "\\.") %>% 
-      mutate(variable = "area") %>% bind_rows(
-      #   data%>% 
-      #     purrr::pluck("PRDN") %>% 
-      #     as.data.frame() %>% 
-      #     gather(area, value) %>% group_by(area) %>%  summarize(value = sum(value)) %>% 
-      #     separate(col = area, into = c("crop", "region"), sep = "\\.") %>% 
-      #     mutate(variable = "prod")
-      # ) %>% bind_rows(
-        data%>% 
-          purrr::pluck("COVR") %>% 
-          as.data.frame() %>% 
-          gather(area, value) %>% group_by(area) %>%  summarize(value = sum(value)) %>%  
-          separate(col = area, into = c("crop", "region"), sep = "\\.") %>% 
-          mutate(variable = "cover")
-      ) %>% 
-      mutate(scenario = scen)
-    
-  }) %>% bind_rows() 
-  }
+
 
 Proc_outdata("7USGRNA") -> OutDB_land_cet
 
@@ -108,7 +78,7 @@ id_start = 501
 
 runif(nruns, 0, 2) -> ET11_factor
 runif(nruns, 0, 2) -> ET12_factor
-runif(nruns, 0, 2) -> ETL2_factor
+runif(nruns, 0.9, 1.1) -> ETL2_factor
 data.frame(ET11_factor = ET11_factor, 
            ET12_factor = ET12_factor, 
            ETL2_factor = ETL2_factor, id = id_start:(id_start + nruns - 1)) -> trial_para
@@ -141,7 +111,9 @@ for (id in c(id_start:(id_start + nruns - 1))) {
   
 }
 
-Proc_outdata(paste0("mcet", 501)) -> OutDB_land_mcet
+Proc_outdata(paste0("mcet", 501:522)) -> OutDB_land_mcet
+
+Proc_outdata("7USGRNA") -> OutDB_land_cet
 OutDB_land_mcet %>% 
   left_join(OutDB_land_cet %>% mutate(scenario = "cet") %>% 
               spread(scenario, value)) %>% 

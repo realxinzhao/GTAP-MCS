@@ -1,6 +1,7 @@
-model <- "model4"
+model <- "model_ydel"
 
-SCENS <- paste0("mcet", seq(311,320))
+#SCENS <- "mcet_default"
+SCENS <- paste0("mcet", 1)
 
 for (scen in SCENS) {
   cmd_command <- paste0("gtap -cmf ../cmf/", scen, ".cmf -log ../log/", scen, ".log")
