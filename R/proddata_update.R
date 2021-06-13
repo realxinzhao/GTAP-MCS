@@ -44,7 +44,7 @@ as.data.frame(read_har(Prmnm)[c("ET11", "ET12", "ETL2")] ) %>%
 trial_para %>% gather(parameter, value, -region, -id) %>% 
   left_join(trial_factor %>% gather(parameter, factor, -id) ) %>% 
   left_join(baseadjust) %>% 
-  group_by(region, parameter) %>% mutate(ID = seq.int(1:length(unique(trial_data$id)))) %>% 
+  group_by(region, parameter) %>% mutate(ID = seq.int(1:length(unique(trial_para$id)))) %>% 
   ungroup() %>%  #redo id
   select(-id) %>% rename(id = ID) %>% 
   mutate(total_factor = factor * basescaler) -> trial_data
@@ -82,12 +82,12 @@ for (id in c(id_start:(id_start + nruns - 1))) {
 for (id in c(id_start:(id_start + nruns - 1))) {  
   #update cmf
   cmf = cmf_default
-  cmf[19] = paste0("Updated file gtapDATA = ../outDB/outDB_mcet/mcet", id, ".upd;")
+  cmf[19] = paste0("Updated file gtapDATA = ../outDB/outDB_mcet_etl/mcet", id, ".upd;")
   cmf[20] = paste0("Solution file = mcet",id, ";")
   cmf[22] = paste0("file gtapPARL = ../parameter/par_mcet", id, ".prm;")
   #cmf[23] = paste0("file gtapPARY = ../parameter/par_mcet", id, ".prm;")
   cmf[23] = paste0("file gtapPARY = default3.prm;") 
-  writeLines(cmf, file(paste0("gtap/cmf/cmf_mcet/mcet", id, ".cmf") ))
+  writeLines(cmf, file(paste0("gtap/cmf/cmf_mcet_etl/mcet", id, ".cmf") ))
 }
 
 #mcet_ydel
